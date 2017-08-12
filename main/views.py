@@ -15,13 +15,13 @@ def Index(request):
 
 def Live(request):
     data = {
-        'current_page': 'live',
+        'current_page': 'Live',
     }
     return render(request,'main/live.html', data)
 
 def Events(request):
     data = {
-        'current_page': 'events',
+        'current_page': 'Events',
         'future_events': Event.objects.filter(end_date_time__gt=datetime.datetime.now()).order_by('start_date_time')
     }
     return render(request,'main/events.html', data)
