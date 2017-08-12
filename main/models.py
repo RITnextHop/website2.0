@@ -5,6 +5,9 @@ class Doc(models.Model):
     title = models.CharField(max_length=100)
     path = models.CharField(max_length=100)
 
+    def __str__(self):
+        return self.title
+
 class Event(models.Model):
     EVENT_TYPE = (
         (1,'Built-It-Night'),
@@ -19,3 +22,6 @@ class Event(models.Model):
     description = models.TextField(max_length=10000)
     docs = models.ManyToManyField(Doc)
     steam_url = models.URLField()
+
+    def __str__(self):
+        return self.title
