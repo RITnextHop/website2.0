@@ -36,4 +36,17 @@ class Eboard(models.Model):
 
     def __str__(self):
         return "{} Term".format(self.term)
+
+class ClubInfo(model.Models):
+    mission = models.TextField()
+    email = models.EmailField()
+    club_page = models.URLField()
+    twitter = models.URLField()
+    facebook = models.URLField()
+
+    def __str__(self):
+        return "Club Info"
+
+    class Meta:
+        verbose_name = "Club Info"
     
