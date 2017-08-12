@@ -4,11 +4,11 @@
 {% load static %}
 <head>
 <link rel="stylesheet" id="base" type="text/css" href="{% static "main/style/base.css" %}">
-<link rel="stylesheet" id="medium" type="text/css" href="{% static "style/desktop.css"%}">
-<link rel="icon" href="{% static "images/favicon.ico" %}" type="image/x-icon">
-<link rel="shortcut icon" href="{% static "images/favicon.ico"}" type="image/x-icon">
+<link rel="stylesheet" id="medium" type="text/css" href="{% static "main/style/desktop.css"%}">
+<link rel="icon" href="{% static "main/images/favicon.ico" %}" type="image/x-icon">
+<link rel="shortcut icon" href="{% static "main/images/favicon.ico"}" type="image/x-icon">
 <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-<link href="{% static "style/font-awesome-4.2.0/css/font-awesome.min.css" %}" rel="stylesheet">
+<link href="{% static "main/style/font-awesome-4.2.0/css/font-awesome.min.css" %}" rel="stylesheet">
 <meta name="viewport" content="initial-scale=1">
 <title>NextHop</title>
 <script>
@@ -28,7 +28,7 @@ window.mobilecheck = function() {
   return check;
 }
 if(window.mobilecheck()) {
-	document.getElementById("medium").href = "{% static "style/mobile.css" %}";
+	document.getElementById("medium").href = "{% static "main/style/mobile.css" %}";
 }
 </script>
 </head>
