@@ -1,7 +1,11 @@
 <div class="event" >
         <h4 class="event"><a href="">{{ event.type }}: {{ event.title }}</a></h4>
         <ul>
+            {% if event.start_date_time|date:"b/d/o" eq event.end_date_time|date:"b/d/o" %}
+                {{ event.start_date_time }} to {{ event.end_date_time|time:"H:i" }}<br>
+            {% else %}
             {{ event.start_date_time }} to {{ event.end_date_time }}<br>
+            {% endif %}
             {{ event.location }}<br>
             {{ event.description }}
         </ul>
