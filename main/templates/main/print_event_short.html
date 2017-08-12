@@ -5,7 +5,7 @@
         <h4 class="event"><a href="">{{ event.type }}: {{ event.title }}</a></h4>
     {% endif %}
     <ul>
-        {{ event.start_date_time|date:"l, F jS g:i a" }}<br>
+        {{ event.start_date_time|date:"l, F jS @ g:i a" }}<br>
         {{ event.location }}
     </ul>
 </div>
