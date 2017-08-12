@@ -1,0 +1,214 @@
+a:link {
+	text-decoration: none;
+	font-weight: bold;
+	color: #545454;
+}
+a:visited {
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	color: black;
+}
+
+body#home a#homenav,
+body#live a#livenav,
+body#events a#eventsnav {
+	color: #F58522;
+}
+
+h3.event{
+	margin-bottom: 0px;
+}
+
+h4.event{
+	margin: 0;
+}
+
+html,body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans', sans-serif;
+	color: #545454;
+	font-size: 16px;
+}
+
+p {
+	text-align: justify;
+}
+
+.contact input {
+	height: 30px;
+	margin: 10px 0 10px 0;
+	font-size: 16px;
+	border-radius: 3px;
+	border: 1px solid #545454;
+	padding-left: 3px;
+	width: 80%;
+}
+
+.contact text {
+	resize: none;
+	margin: 10px 0 10px 0;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	border-radius: 3px;
+	border: 1px solid #545454;
+	padding-left: 3px;
+	width:80%;
+}
+
+ul.navigation {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+ul.navigation li {
+	display: inline;
+	padding: 0 15px;
+}
+
+.navigation a:visited {
+	color: white;
+}
+
+.navigation a:link {
+	color: white;
+}
+
+.navigation a:hover {
+	color: #DFDFDF;
+}
+
+.navigationLink {
+	/*padding-left: 15px;*/
+	font-size: 1.1em;
+}
+
+.major {
+	margin-left: 15px;
+}
+
+.padLeft {
+	margin-left: 40px;
+}
+
+.section {
+	padding: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.text {
+	line-height: 30px;
+}
+
+.sectionHeader{
+	font-size: 1.9em;
+}
+
+.sectionInner {
+	max-width: 800px;
+	overflow: auto;
+}
+
+.video {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#footer {
+	margin: 50px 0 0 0;
+	padding: 20px;
+	text-align: center;
+	max-width: 100%;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+#footer-homepage {
+	margin: 50px 0 0 0;
+	padding: 20px;
+	text-align: center;
+	max-width: 100%;
+	line-height: 30px;
+	font-weight: bold;
+	color: white;
+}
+
+#governance_contact {
+	background-image: url("/images/governancebg.jpg");
+	background-attachment: fixed;
+	padding: 30px 0 30px 0;
+}
+
+#navigationOuter {
+	background-color: #405468;
+}
+
+#nextHop {
+	font-size: 80px;
+	font-weight: bolder;
+	display: inline-block;
+	margin: 30px 0 30px 0;
+}
+
+#sectionFrame {
+	max-width: 1300px;
+	overflow: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#event_button {
+    background-color: #F58522;
+    border: solid #F58522 .5px;
+	border-radius: 4px;
+	font-weight: bold;
+    color: black;
+	font-family: inherit;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 20px;
+    cursor: pointer;
+}
+
+#subscribeButton {
+	clear: both;
+	background-color: #bbb;
+	border: 0 none;
+	border-radius: 4px;
+	color: black;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: bold;
+	height: 32px;
+	line-height: 32px;
+	margin: 0 5px 10px 0;
+	padding: 0 22px;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: top;
+	white-space: nowrap;
+}
+
+#subscribeButton:hover {
+	background-color: #aaa;
+}
+
+#topBar {
+	text-align: center;
+	background-image: url("/images/header.png");
+	background-attachment: fixed;
+	margin-top: 0;
+}
+
+#topBar img {
+	padding: 40px 0;
+}
