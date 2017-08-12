@@ -16,7 +16,9 @@
         <div class="fiftyFloat">
             <h1 class="sectionHeader"><i class="fa fa-calendar"></i> Upcoming Events </h1>
             <div class="padLeft">
-                <!-- Events go here -->
+                {% for event is future_events %}
+                    {{ event }}
+                {% end for %}
             </div>
         </div>
         <div class="fiftyFloat">
