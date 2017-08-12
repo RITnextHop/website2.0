@@ -1,5 +1,30 @@
 {% extends 'main/header.html' %}
 
 {% block content %}
-
+<div class="section" id="events-upcoming">
+        
+            <div class="sectionInner text">
+      
+              <!-- event search goes here -->
+              
+                    <br><h1 class="sectionHeader"><i class="fa fa-calendar"></i> Upcoming Events</h1>
+                    <div class="padLeft">
+                      {% for event in future_events %}
+                        {% include "main/print_event_long.html" %}
+                      {% endfor %}
+                    </div>
+                </div>
+          </div>
+      <div align="center">
+          <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=ritnexthop%40gmail.com&amp;color=%23B1440E&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="400" frameborder="0" scrolling="no"></iframe></div><br>
+          <div class="section" id="events-past">
+            <div class="sectionInner text">
+                    <h1 class="sectionHeader"><i class="fa fa-history"></i> Past Events</h1><br>
+                  <form action="event_search.php" method="post">
+                      <center><input id="event_button" name="type" type="submit" value="Tech Talks">
+                      <input id="event_button" name="type" type="submit" value="Build-It-Night">
+                      <input id="event_button" name="type" type="submit" value="Other"></center>
+                  </form>
+            </div>
+          </div> 
 {% endblock %}

@@ -22,5 +22,6 @@ def Live(request):
 def Events(request):
     data = {
         'current_page': 'events',
+        'future_events': Event.objects.filter(end_date_time__gt=datetime.datetime.now()).order_by('start_date_time')
     }
     return render(request,'main/events.html', data)
