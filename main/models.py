@@ -15,7 +15,8 @@ class Event(models.Model):
         ('Other','Other',),
     )
     type = models.CharField(choices=EVENT_TYPE, default='Built-It-Night', max_length=14)
-    title = models.CharField(max_length=500)
+    title = models.CharField(max_length=50)
+    url_title = models.SlugField(max_length=50, help_text="Replaces spaces in title with '_'. This field is displayed as the unique url of the event. (Slug Feild")
     location = models.CharField(max_length=100)
     #get dow from date.weekday()
     start_date_time = models.DateTimeField()
