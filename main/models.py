@@ -25,3 +25,11 @@ class Event(models.Model):
 
     def __str__(self):
         return self.title
+
+class Eboard(models.Model):
+    president = models.CharField(max_length=50)
+    vice-president = models.CharField(max_length=50)
+    secretary = models.CharField(max_length=50)
+    treasurer = models.CharField(max_length=50)
+    advisor = models.CharField(max_length=50)
+    
