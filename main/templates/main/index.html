@@ -16,9 +16,13 @@
         <div class="fiftyFloat">
             <h1 class="sectionHeader"><i class="fa fa-calendar"></i> Upcoming Events </h1>
             <div class="padLeft">
-                {% for event in future_events %}
-                    {% include "main/print_event_short.html" %}
-                {% endfor %}
+                {% if future_events %}
+                    {% for event in future_events %}
+                        {% include "main/print_event_short.html" %}
+                    {% endfor %}
+                {% else %}
+                    <h4>No future events scheduled. Please check back soon!</h4>
+                {% endif %}
             </div>
         </div>
         <div class="fiftyFloat">
