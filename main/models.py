@@ -48,5 +48,5 @@ class ClubInfo(models.Model):
         return "Club Info"
 
     class Meta:
-        verbose_name = "Club Info"
+        verbose_name_plural = "Club Info"
     
