@@ -204,7 +204,7 @@ ul.navigation li {
 
 #topBar {
 	text-align: center;
-	background-image: url("/images/header.png");
+	background-image: url("/static/main/images/header.png");
 	background-attachment: fixed;
 	margin-top: 0;
 }
