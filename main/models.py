@@ -21,7 +21,7 @@ class Event(models.Model):
     end_date_time = models.DateTimeField()
     description = models.TextField(max_length=10000)
     docs = models.ManyToManyField(Doc)
-    steam_url = models.URLField()
+    steam_url = models.URLField(blank=True)
 
     def __str__(self):
         return self.title
