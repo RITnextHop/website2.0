@@ -20,7 +20,7 @@ class Event(models.Model):
     start_date_time = models.DateTimeField()
     end_date_time = models.DateTimeField()
     description = models.TextField(max_length=10000)
-    docs = models.ManyToManyField(Doc)
+    docs = models.ManyToManyField(Doc, blank=True)
     steam_url = models.URLField(blank=True)
 
     def __str__(self):
