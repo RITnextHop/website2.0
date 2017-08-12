@@ -29,10 +29,15 @@ class Event(models.Model):
 class Eboard(models.Model):
     term = models.CharField(max_length=50, null=True)
     president = models.CharField(max_length=50)
+    president_email = models.EmailField()
     vice_president = models.CharField(max_length=50)
+    vp_email = models.EmailField()
     secretary = models.CharField(max_length=50)
+    secretary_email = models.EmailField()
     treasurer = models.CharField(max_length=50)
+    treasurer_email = models.EmailField()
     advisor = models.CharField(max_length=50)
+    advisor_email = models.EmailField()
 
     def __str__(self):
         return "{} Term".format(self.term)
