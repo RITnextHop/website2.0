@@ -11,7 +11,8 @@ class Doc(models.Model):
 class Event(models.Model):
     EVENT_TYPE = (
         ('Built-It-Night','Built-It-Night'),
-        ('Tech Talk','Tech Talk','Other'),
+        ('Tech Talk','Tech Talk',),
+        ('Other','Other',),
     )
     type = models.CharField(choices=EVENT_TYPE, default='Built-It-Night', max_length=14)
     title = models.CharField(max_length=500)
