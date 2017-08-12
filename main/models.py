@@ -18,7 +18,7 @@ class Event(models.Model):
     location = models.CharField(max_length=100)
     #get dow from date.weekday()
     start_date_time = models.DateTimeField()
-    end_time = models.TimeField()
+    end_date_time = models.DateTimeField()
     description = models.TextField(max_length=10000)
     docs = models.ManyToManyField(Doc)
     steam_url = models.URLField(blank=True)
