@@ -140,7 +140,7 @@ ul.navigation li {
 }
 
 #governance_contact {
-	background-image: url("/images/governancebg.jpg");
+	background-image: url("/static/main/images/governancebg.jpg");
 	background-attachment: fixed;
 	padding: 30px 0 30px 0;
 }
