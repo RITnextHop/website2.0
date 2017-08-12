@@ -2,7 +2,7 @@
         <h4 class="event"><a href="">{{ event.type }}: {{ event.title }}</a></h4>
         <ul>
             {% if event.start_date_time|date:"b/d/o" == event.end_date_time|date:"b/d/o" %}
-                {{ event.start_date_time }} to {{ event.end_date_time|time:"g:i" }}<br>
+                {{ event.start_date_time }} to {{ event.end_date_time|time:"g:i a" }}<br>
             {% else %}
             {{ event.start_date_time }} to {{ event.end_date_time }}<br>
             {% endif %}
