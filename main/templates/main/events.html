@@ -9,9 +9,13 @@
               
                     <br><h1 class="sectionHeader"><i class="fa fa-calendar"></i> Upcoming Events</h1>
                     <div class="padLeft">
-                      {% for event in future_events %}
-                        {% include "main/print_event_long.html" %}
-                      {% endfor %}
+                      {% if future_events %}
+                        {% for event in future_events %}
+                            {% include "main/print_event_long.html" %}
+                        {% endfor %}
+                    {% else %}
+                        <h2>Currently no upcoming events, please check back soon!</h2>
+                    {% endif %}
                     </div>
                 </div>
           </div>
