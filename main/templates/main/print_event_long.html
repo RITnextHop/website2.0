@@ -1,5 +1,9 @@
 <div class="event" >
+    {% if event.type == 'Other %'}
+        <h4 class="event"><a href="">{{ event.title }}</a></h4>
+    {% else %}
         <h4 class="event"><a href="">{{ event.type }}: {{ event.title }}</a></h4>
+    {% endif %}
         <ul>
             {% if event.start_date_time|date:"b/d/o" == event.end_date_time|date:"b/d/o" %}
                 {{ event.start_date_time|date:"l, F jS g:i a" }} to {{ event.end_date_time|time:"g:i a" }}<br>
