@@ -37,7 +37,7 @@ class Eboard(models.Model):
     def __str__(self):
         return "{} Term".format(self.term)
 
-class ClubInfo(model.Models):
+class ClubInfo(models.Model):
     mission = models.TextField()
     email = models.EmailField()
     club_page = models.URLField()
