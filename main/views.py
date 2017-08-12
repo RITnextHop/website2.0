@@ -6,5 +6,6 @@ from .models import *
 def Index(request):
     data = {
         'current_page': 'home',
+        'eboard': Eboard.objects.get(pk=1)
     }
     return render(request,'main/index.html', data)
