@@ -11,9 +11,9 @@ a:hover {
 	color: black;
 }
 
-body#home a#homenav,
-body#live a#livenav,
-body#events a#eventsnav {
+body#Home a#homenav,
+body#Live a#livenav,
+body#Events a#eventsnav {
 	color: #F58522;
 }
 
