@@ -27,7 +27,7 @@ class Event(models.Model):
         return self.title
 
 class Eboard(models.Model):
-    term = models.CharField(max_length=50)
+    term = models.CharField(max_length=50., null=True)
     president = models.CharField(max_length=50)
     vice_president = models.CharField(max_length=50)
     secretary = models.CharField(max_length=50)
@@ -35,5 +35,5 @@ class Eboard(models.Model):
     advisor = models.CharField(max_length=50)
 
     def __str__(self):
-        return "{} ".format(self.term)
+        return "{} Term".format(self.term)
     
