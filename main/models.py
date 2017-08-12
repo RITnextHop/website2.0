@@ -10,7 +10,7 @@ class Event(models.Model):
         ('bin','Built-It-Night'),
         ('tt','Tech Talk'),
     )
-    type = models.CharField(choices=EVENT_TYPE)
+    type = models.CharField(choices=EVENT_TYPE, max_length=3)
     title = models.CharField(max_length=500)
     location = models.CharField(max_length=100)
     #get dow from date.weekday()
