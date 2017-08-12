@@ -12,7 +12,7 @@ class Event(models.Model):
     )
     type = models.CharField(choices=EVENT_TYPE)
     title = models.CharField(max_length=500)
-    location models.CharField(max_length=100)
+    location = models.CharField(max_length=100)
     #get dow from date.weekday()
     start_date_time = models.DateTimeField()
     end_date_time = models.DateTimeField()
