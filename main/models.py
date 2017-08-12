@@ -7,10 +7,10 @@ class Docs(models.Model):
 
 class Event(models.Model):
     EVENT_TYPE = (
-        ('bin','Built-It-Night'),
-        ('tt','Tech Talk'),
+        (1,'Built-It-Night'),
+        (2,'Tech Talk'),
     )
-    type = models.CharField(choices=EVENT_TYPE, max_length=3)
+    type = models.IntegerField(choices=EVENT_TYPE, default='1')
     title = models.CharField(max_length=500)
     location = models.CharField(max_length=100)
     #get dow from date.weekday()
