@@ -7,7 +7,7 @@ import datetime
 def Index(request):
     data = {
         'current_page': 'home',
-        'eboard': Eboard.objects.get(pk=1),
+        'eboard': Eboard.objects.get(term='2017-2018'),
         'mission': ClubInfo.objects.get(pk=1).mission,
         'future_events': Event.objects.filter(end_date_time__gt=datetime.datetime.now()).order_by('start_date_time')[:2]
     }
