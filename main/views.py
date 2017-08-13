@@ -28,11 +28,12 @@ def Events(request):
     return render(request,'main/events.html', data)
 
 def EventPage(request, event_url):
+    current event = ''
     for event in Event.objects.all():
         if event.url == event_url:
             current_event = event
             break
-    try current_event:    
+    if current_event != '':    
         data = {
             'current_page': current_event.title,
             'event': current_event
