@@ -36,10 +36,10 @@ if(window.mobilecheck()) {
 }
 </script>
 </head>
-{% if current_page == 'home' or current_page == 'live' %}
+{% if current_page == 'Home' or current_page == 'Live' %}
   <body id="{{ current_page }}">
 {% else %}
-  <body id="events">
+  <body id="Events">
 {% endif %}
 
 {% include "main/navbar.html" %}
