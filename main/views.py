@@ -35,6 +35,12 @@ def Events(request):
     }
     return render(request,'main/events.html', data)
 
+def Contact(request):
+    data = {
+        'info': ClubInfo.objects.get(pk=1)
+    }
+    return render(request,'main/contact_us.html',data)
+
 def EventPage(request, event_url):
     current_event = ''
     for event in Event.objects.all():
