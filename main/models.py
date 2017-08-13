@@ -22,7 +22,7 @@ class Event(models.Model):
     end_date_time = models.DateTimeField()
     description = models.TextField(max_length=10000)
     docs = models.ManyToManyField(Doc, blank=True)
-    steam_url = models.URLField(blank=True)
+    stream_url = models.URLField(blank=True)
     #url_slug = models.SlugField(blank=True)
 
     @property
