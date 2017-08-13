@@ -8,5 +8,5 @@ urlpatterns = [
     url(r'live/$', views.Live, name='live'),
     url(r'events/$', views.Events, name='events'),
     url(r'^events/(?P<event_url>[\w-]+)/$', views.EventPage, name='event_page'),
-    url(r'contact_us/$', views.Events, name='events'),
+    url(r'contact_us/$', views.Contact, name='contact'),
 ]
