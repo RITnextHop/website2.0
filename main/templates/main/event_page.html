@@ -7,9 +7,9 @@
 						
         <br><h1 class="sectionHeader"><i class="fa fa-calendar"></i> 
             {% if event.type == 'Other' %}
-                <h4 class="event"><a href="">{{ event.title }}</a></h4>
+                <h1 class="event"><a href="">{{ event.title }}</a></h1>
             {% else %}
-                <h4 class="event"><a href="">{{ event.type }}: {{ event.title }}</a></h4>
+                <h1 class="event"><a href="">{{ event.type }}: {{ event.title }}</a></h1>
             {% endif %}
         </h1>
 				<div class="padLeft">
@@ -21,6 +21,7 @@
                         {% endif %}
                     </h2>
                     <h3>{{ event.location }}</h3>
+                    {{ event.description | linebreaks}}
                     <br>
                     {% for doc in event.docs.all %}
                         <br><br><iframe src="doc.path" align="left" width="800" height="500" 
