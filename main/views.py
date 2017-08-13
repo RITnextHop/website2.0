@@ -32,7 +32,7 @@ def EventPage(request, event_url):
         if event.url == event_url:
             current_event = event
             break
-    if current_event:    
+    try current_event:    
         data = {
             'current_page': current_event.title,
             'event': current_event
