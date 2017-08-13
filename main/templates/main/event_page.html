@@ -7,9 +7,9 @@
 						
         <br><h1 class="sectionHeader"><i class="fa fa-calendar"></i> 
             {% if event.type == 'Other' %}
-                <h1 class="event"><a href="">{{ event.title }}</a></h1>
+                {{ event.title }}
             {% else %}
-                <h1 class="event"><a href="">{{ event.type }}: {{ event.title }}</a></h1>
+                { event.type }}: {{ event.title }}
             {% endif %}
         </h1>
 				<div class="padLeft">
