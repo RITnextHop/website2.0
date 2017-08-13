@@ -33,7 +33,9 @@ def EventPage(request, event_url):
             current_event = event
             break
     
-    if !current_event:
+    try:
+        current_event
+    except NameError:
         raise Http404("Event does not exist!")
     data = {
         'current_page': current_event.title,
