@@ -42,7 +42,11 @@
                       </h4>
                     </div>
                     <div id="collapse1" class="panel-collapse collapse">
-                      <div class="panel-body">Panel Body</div>
+                      <div class="panel-body">
+                            {% for event in bins %}
+                                {% include 'main/print_event_long.html' %}
+                            {% endfor %}
+                      </div>
                       <div class="panel-footer"></div>
                     </div>
                   </div>
@@ -57,7 +61,11 @@
                           </h4>
                         </div>
                         <div id="collapse2" class="panel-collapse collapse">
-                          <div class="panel-body">Panel Body</div>
+                          <div class="panel-body">
+                            {% for event in tech_talks %}
+                                {% include 'main/print_event_long.html' %}
+                            {% endfor %}
+                          </div>
                           <div class="panel-footer"></div>
                         </div>
                       </div>
@@ -72,7 +80,11 @@
                               </h4>
                             </div>
                             <div id="collapse3" class="panel-collapse collapse">
-                              <div class="panel-body">Panel Body</div>
+                              <div class="panel-body">
+                                {% for event in other_events %}
+                                    {% include 'main/print_event_long.html' %}
+                                {% endfor %}
+                              </div>
                               <div class="panel-footer"></div>
                             </div>
                           </div>

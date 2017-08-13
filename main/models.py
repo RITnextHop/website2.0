@@ -11,11 +11,11 @@ class Resource(models.Model):
 
 class Event(models.Model):
     EVENT_TYPE = (
-        ('Built-It-Night','Built-It-Night'),
+        ('Build-It-Night','Build-It-Night'),
         ('Tech Talk','Tech Talk',),
         ('Other','Other',),
     )
-    type = models.CharField(choices=EVENT_TYPE, default='Built-It-Night', max_length=14)
+    type = models.CharField(choices=EVENT_TYPE, default='Build-It-Night', max_length=14)
     title = models.CharField(max_length=50)
     location = models.CharField(max_length=100)
     start_date_time = models.DateTimeField()
