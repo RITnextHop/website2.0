@@ -27,7 +27,7 @@
             {% endfor %}
             {{ event.stream_url }}
             {% if 'http' in event.stream_url %}
-                <br><br><iframe src="event.stream_url" align="left" width="800" height="500" allowfullscreen></iframe>
+                <br><br><iframe src="{{ event.stream_url }}" align="left" width="800" height="500" allowfullscreen></iframe>
             {% endif %}
 	    </div>
 	</div>
