@@ -23,14 +23,17 @@ class Event(models.Model):
     description = models.TextField(max_length=10000)
     docs = models.ManyToManyField(Doc, blank=True)
     steam_url = models.URLField(blank=True)
-    url_slug = models.SlugField(blank=True)
+    #url_slug = models.SlugField(blank=True)
+
+    def url(self)
+        return slugify(self.title)
 
     def __str__(self):
         return self.title
 
-    def save(self, *args, **kwargs):
-        self.url_slug = slugify(self.title)
-        super(Event, self).save(*args, **kwargs)
+    #def save(self, *args, **kwargs):
+    #    self.url_slug = slugify(self.title)
+    #    super(Event, self).save(*args, **kwargs)
 
 class Eboard(models.Model):
     term = models.CharField(max_length=50, null=True)
