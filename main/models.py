@@ -29,7 +29,7 @@ class Event(models.Model):
         return self.title
 
     def save(self, *args, **kwargs):
-        self.slug = slugify(self.title)
+        self.url_slug = slugify(self.title)
         super(Event, self).save(*args, **kwargs)
 
 class Eboard(models.Model):
