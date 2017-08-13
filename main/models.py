@@ -21,7 +21,7 @@ class Event(models.Model):
     start_date_time = models.DateTimeField()
     end_date_time = models.DateTimeField()
     description = models.TextField(max_length=10000)
-    docs = models.ManyToManyField(Resource, blank=True)
+    resources = models.ManyToManyField(Resource, blank=True)
     stream_url = models.URLField(blank=True, help_text='If this is a YouTube link, ensure that /emded/ in include! Example: https://www.youtube.com/embed/EBYrGQoJ0Xg')
     #url_slug = models.SlugField(blank=True)
 
