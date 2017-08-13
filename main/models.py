@@ -23,7 +23,7 @@ class Event(models.Model):
     description = models.TextField(max_length=10000)
     docs = models.ManyToManyField(Doc, blank=True)
     steam_url = models.URLField(blank=True)
-    url_slug = models.SlugField(blank=True, helper_text="LEAVE BLANK. GENERATED AUTOMATICALLY")
+    url_slug = models.SlugField(blank=True, help_text="LEAVE BLANK. GENERATED AUTOMATICALLY")
 
     def __str__(self):
         return self.title
