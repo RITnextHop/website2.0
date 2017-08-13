@@ -3,8 +3,10 @@
 {% block content %}
 
 <div class="sectionInner text">	
-    <!--<p><strong><i class="fa fa-clock-o fa-2x"></i> Reminder that our PXE boot build it night is tonight, Thursday 4/30 at 7pm in 70-2320.  Hope to see you there!</strong></p>
-    <hr>-->
+    {% if event_today %}
+        <p><strong><i class="fa fa-clock-o fa-2x"></i> Reminder that our {{ event.title }} {{ event.type }} is tonight, {{ event.start_date_time|date:"D, N jS @ g:i a" }} in {{ event.location }}.  Hope to see you there!</strong></p>
+        <hr>
+    {% endif %}
         <h1 class="sectionHeader"><i class="fa fa-question-circle"></i> What is NextHop?</h1>
         <div class="padLeft">
             {{ mission | linebreaks }}
