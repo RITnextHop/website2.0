@@ -24,9 +24,9 @@ def Events(request):
     data = {
         'current_page': 'Events',
         'future_events': Event.objects.filter(end_date_time__gt=datetime.datetime.now()).order_by('start_date_time'),
-        'bins': Event.objects.filter(type='Build-It-Night'),
-        'tech_talks': Event.objects.filter(type='Tech Talk'),
-        'other_events': Event.objects.filter(type='Other'),
+        'bins': Event.objects.filter(type='Build-It-Night').order_by('start_date_time'),
+        'tech_talks': Event.objects.filter(type='Tech Talk').order_by('start_date_time'),
+        'other_events': Event.objects.filter(type='Other').order_by('start_date_time'),
     }
     return render(request,'main/events.html', data)
 
