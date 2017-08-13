@@ -2,9 +2,9 @@ from django.db import models
 from django.template.defaultfilters import slugify
 
 # Create your models here.
-class Doc(models.Model):
+class Resource(models.Model):
     title = models.CharField(max_length=100)
-    path = models.CharField(max_length=100)
+    link = models.CharField(max_length=100)
 
     def __str__(self):
         return self.title
@@ -21,7 +21,7 @@ class Event(models.Model):
     start_date_time = models.DateTimeField()
     end_date_time = models.DateTimeField()
     description = models.TextField(max_length=10000)
-    docs = models.ManyToManyField(Doc, blank=True)
+    docs = models.ManyToManyField(Resource, blank=True)
     stream_url = models.URLField(blank=True)
     #url_slug = models.SlugField(blank=True)
 
