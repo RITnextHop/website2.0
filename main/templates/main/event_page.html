@@ -22,8 +22,8 @@
             <h3>{{ event.location }}</h3>
             {{ event.description | linebreaks}}
             <br>
-            {% for doc in event.docs.all %}
-                <br><br><iframe src="doc.path" align="left" width="800" height="500"></iframe>
+            {% for resource in event.resources.all %}
+                <br><br><iframe src="doc.link" align="left" width="800" height="500"></iframe>
             {% endfor %}
             {% if 'http' in event.stream_url %}
                 <br><br><iframe src="{{ event.stream_url }}" align="left" width="800" height="500" allowfullscreen></iframe>
