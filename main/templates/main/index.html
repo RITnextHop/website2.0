@@ -4,7 +4,7 @@
 
 <div class="sectionInner text">	
     {% if event_today %}
-        <p><strong><i class="fa fa-clock-o fa-2x"></i> Reminder that our {{ event.title }} {{ event.type }} is tonight, {{ event.start_date_time|date:"D, N jS @ g:i a" }} in {{ event.location }}.  Hope to see you there!</strong></p>
+        <p><strong><i class="fa fa-clock-o fa-2x"></i> Reminder that our {{ event_today.title }} {{ event_today.type }} is tonight, {{ event_today.start_date_time|date:"D, N jS @ g:i a" }} in {{ event_today.location }}.  Hope to see you there!</strong></p>
         <hr>
     {% endif %}
         <h1 class="sectionHeader"><i class="fa fa-question-circle"></i> What is NextHop?</h1>
