@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import *
 import datetime
+from django.http import Http404
 
 # Create your views here.
 
@@ -31,6 +32,9 @@ def EventPage(request, event_url):
         if event.url == event_url:
             current_event = event
             break
+    
+    if !current_event:
+        raise Http404("Event does not exist!")
     data = {
         'current_page': current_event.title,
         'event': current_event
