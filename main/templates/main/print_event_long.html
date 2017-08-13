@@ -8,7 +8,7 @@
             {% if event.start_date_time|date:"b/d/o" == event.end_date_time|date:"b/d/o" %}
                 {{ event.start_date_time|date:"l, F jS, o @ g:i a" }} to {{ event.end_date_time|time:"g:i a" }}<br>
             {% else %}
-            {{ event.start_date_time|date:"l, F jS, o @ g:i a" }} through {{ event.end_date_time|date:"l, F jS, o @ g:i a" }}<br>
+                {{ event.start_date_time|date:"l, F jS, o @ g:i a" }} through {{ event.end_date_time|date:"l, F jS, o @ g:i a" }}<br>
             {% endif %}
             {{ event.location }}<br>
             {{ event.description }}

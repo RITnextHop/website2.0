@@ -2,6 +2,35 @@
 
 {% block content %}
 
-{{ event }}
+<div class="section" id="events-upcoming">
+		<div class="sectionInner text">
+						
+        <br><h1 class="sectionHeader"><i class="fa fa-calendar"></i> 
+            {% if event.type == 'Other' %}
+                <h4 class="event"><a href="">{{ event.title }}</a></h4>
+            {% else %}
+                <h4 class="event"><a href="">{{ event.type }}: {{ event.title }}</a></h4>
+            {% endif %}
+        </h1>
+				<div class="padLeft">
+					<h2>
+                        {% if event.start_date_time|date:"b/d/o" == event.end_date_time|date:"b/d/o" %}
+                            {{ event.start_date_time|date:"l, F jS, o @ g:i a" }} to {{ event.end_date_time|time:"g:i a" }}<br>
+                        {% else %}
+                            {{ event.start_date_time|date:"l, F jS, o @ g:i a" }} through {{ event.end_date_time|date:"l, F jS, o @ g:i a" }}<br>
+                        {% endif %}
+                    </h2>
+                    <h3>{{ event.location }}</h3>
+                    <br>
+                    {% for doc in event.docs %}
+                        <br><br><iframe src="doc" align="left" width="800" height="500" 
+                        {% if 'youtube' in doc %}
+                            echo 'allowfullscreen'; }?>></iframe>
+                        {% endif %}
+                    {% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
 
 {% endblock %}
