@@ -32,13 +32,11 @@ def EventPage(request, event_url):
         if event.url == event_url:
             current_event = event
             break
-    
-    try:
-        current_event
-    except NameError:
-        raise Http404("Event does not exist!")
+if current_event:    
     data = {
         'current_page': current_event.title,
         'event': current_event
     }
     return render(request, 'main/event_page.html', data)
+else:
+    raise Http404("Event does not exist!")
