@@ -32,7 +32,6 @@ def EventPage(request, event_url):
     for event in Event.objects.all():
         if event.url == event_url:
             current_event = event
-            print(current_event)
             break
     if current_event == '':    
         raise Http404("Event does not exist!")
