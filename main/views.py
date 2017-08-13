@@ -27,8 +27,9 @@ def Events(request):
     return render(request,'main/events.html', data)
 
 def EventPage(request, url_slug):
+    event = Event.objects.get(url_slug=url_slug)
     data = {
         'current_page': event.title,
-        'event': Event.objects.get(url_slug=url_slug)
+        'event': event
     }
     return render(request, 'main/event_page.html', data)
