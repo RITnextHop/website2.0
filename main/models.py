@@ -25,7 +25,7 @@ class Event(models.Model):
     steam_url = models.URLField(blank=True)
     #url_slug = models.SlugField(blank=True)
 
-    def url(self)
+    def url(self):
         return slugify(self.title)
 
     def __str__(self):
