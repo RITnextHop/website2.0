@@ -4,8 +4,9 @@
 
 <div class="sectionInner text">	
     {% if event_today %}
+    <br>
     <div class="alert alert-info" role="alert">
-        <a href="{{ event_today.url }}" class="alert-link">
+        <a href="/events/{{ event_today.url }}" class="alert-link">
             <i class="fa fa-clock-o fa-2x"></i> Reminder that our {{ event_today.title }} {{ event_today.type }} is tonight, {{ event_today.start_date_time|date:"D, N jS @ g:i a" }} in {{ event_today.location }}.  Hope to see you there!
         </a>    
     </div>
