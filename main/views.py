@@ -28,7 +28,7 @@ def Events(request):
     return render(request,'main/events.html', data)
 
 def EventPage(request, event_url):
-    current event = ''
+    current_event = ''
     for event in Event.objects.all():
         if event.url == event_url:
             current_event = event
