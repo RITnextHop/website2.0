@@ -22,7 +22,7 @@
                     </h2>
                     <h3>{{ event.location }}</h3>
                     <br>
-                    {% for doc in event.docs %}
+                    {% for doc in event.docs.all %}
                         <br><br><iframe src="doc.path" align="left" width="800" height="500" 
                         {% if 'youtube' in doc.path %}
                             'allowfullscreen'></iframe>
