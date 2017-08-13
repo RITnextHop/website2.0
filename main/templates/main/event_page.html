@@ -25,6 +25,7 @@
             {% for doc in event.docs.all %}
                 <br><br><iframe src="doc.path" align="left" width="800" height="500"></iframe>
             {% endfor %}
+            {{ event.stream_url }}
             {% if 'http' in event.stream_url %}
                 <br><br><iframe src="event.stream_url" align="left" width="800" height="500" allowfullscreen></iframe>
             {% endif %}
