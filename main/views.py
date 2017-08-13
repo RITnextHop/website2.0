@@ -25,3 +25,10 @@ def Events(request):
         'future_events': Event.objects.filter(end_date_time__gt=datetime.datetime.now()).order_by('start_date_time')
     }
     return render(request,'main/events.html', data)
+
+def EventPage(request, url_slug):
+    data = {
+        'current_page': event.title,
+        'event': Event.objects.get(url_slug=url_slug)
+    }
+    return render(request, 'main/event_page.html', data)
