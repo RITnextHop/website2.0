@@ -3,35 +3,35 @@
 {% block content %}
 
 <div class="section" id="events-upcoming">
-		<div class="sectionInner text">
-						
-        <br><h1 class="sectionHeader"><i class="fa fa-calendar"></i> 
+	<div class="sectionInner text">
+		<br><h1 class="sectionHeader"><i class="fa fa-calendar"></i> 
             {% if event.type == 'Other' %}
                 {{ event.title }}
             {% else %}
                 {{ event.type }}: {{ event.title }}
             {% endif %}
         </h1>
-				<div class="padLeft">
-					<h2>
-                        {% if event.start_date_time|date:"b/d/o" == event.end_date_time|date:"b/d/o" %}
-                            {{ event.start_date_time|date:"l, F jS, o @ g:i a" }} to {{ event.end_date_time|time:"g:i a" }}<br>
-                        {% else %}
-                            {{ event.start_date_time|date:"l, F jS, o @ g:i a" }} through {{ event.end_date_time|date:"l, F jS, o @ g:i a" }}<br>
-                        {% endif %}
-                    </h2>
-                    <h3>{{ event.location }}</h3>
-                    {{ event.description | linebreaks}}
-                    <br>
-                    {% for doc in event.docs.all %}
-                        <br><br><iframe src="doc.path" align="left" width="800" height="500" 
-                        {% if 'youtube' in doc.path %}
-                            'allowfullscreen'></iframe>
-                        {% endif %}
-                    {% endfor %}
-				</div>
-			</div>
-		</div>
+	    <div class="padLeft">
+			<h2>
+                {% if event.start_date_time|date:"b/d/o" == event.end_date_time|date:"b/d/o" %}
+                    {{ event.start_date_time|date:"l, F jS, o @ g:i a" }} to {{ event.end_date_time|time:"g:i a" }}<br>
+                {% else %}
+                    {{ event.start_date_time|date:"l, F jS, o @ g:i a" }} through {{ event.end_date_time|date:"l, F jS, o @ g:i a" }}<br>
+                {% endif %}
+            </h2>
+            <h3>{{ event.location }}</h3>
+            {{ event.description | linebreaks}}
+            <br>
+                {% for doc in event.docs.all %}
+                    <br><br><iframe src="doc.path" align="left" width="800" height="500" 
+                    {% if 'youtube' in doc.path %}
+                        'allowfullscreen'
+                    {% endif %}
+                    ></iframe>
+                {% endfor %}
+	    </div>
+	</div>
+</div>
 
 
 {% endblock %}
