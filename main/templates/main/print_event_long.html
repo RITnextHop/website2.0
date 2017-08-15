@@ -11,6 +11,6 @@
                 {{ event.start_date_time|date:"l, F jS, o @ g:i a" }} through {{ event.end_date_time|date:"l, F jS, o @ g:i a" }}<br>
             {% endif %}
             {{ event.location }}<br>
-            {{ event.description|safe }}
+            {{ event.description|safe linebreak }}
         </ul>
 </div>
