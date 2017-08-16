@@ -4,7 +4,6 @@
 - model: main.resource
   pk: 2
   fields: {title: AD and DNS Lab, link: /docs/ad-dns.pdf}
-
 model: main.event
  pk: 1
  fields:
@@ -16,7 +15,6 @@ model: main.event
   description: ''
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 2
  fields:
@@ -28,7 +26,6 @@ model: main.event
   description: "First NextHop Build-It-Night: Multi-Vendor Networking!"
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 3
  fields:
@@ -40,7 +37,6 @@ model: main.event
   description: "Learn about DHCP or DNS or refresh your knowledge!"
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 4
  fields:
@@ -52,7 +48,6 @@ model: main.event
   description: "Join us to get down and dirty with the LAMP (Linux, Apache, MySQL, PHP) stack. Learn how to setup the infrastructure needed to support a dynamic website or web application. Learners of all skill levels are welcome."
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 5
  fields:
@@ -64,7 +59,6 @@ model: main.event
   description: "Come learn about cool things like SLAAC and Google Authenticator!"
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 6
  fields:
@@ -76,7 +70,6 @@ model: main.event
   description: "Learn about PXE (Pre-Execution Environment) which involves booting an operating system on a computer over the network. You'll get to learn about it and build your own PXE server! This is a critical piece of technology used in many infrastructures to image machines and is not taught in any classes."
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 7
  fields:
@@ -88,7 +81,6 @@ model: main.event
   description: "Hit the road with NextHop as we head out and tour the Yahoo! Data Center. More information to come!"
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 8
  fields:
@@ -100,7 +92,6 @@ model: main.event
   description: "Info session and idea collaboration with an awesome demo! View the slides <a href=https://docs.google.com/presentation/d/19z-Qy__WXwp6VgkyMrIj_o8_HM7pBe6JagzLvCKKab8/edit?usp=sharing" target="_blank">here</a> and the live stream <a href="live.php">here</a>.""
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 9
  fields:
@@ -112,7 +103,6 @@ model: main.event
   description: "Learn about and configure BGP, the routing protocol of the internet."
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 10
  fields:
@@ -124,7 +114,6 @@ model: main.event
   description: "Learn about and configure access control lists and how to implement NAT."
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 11
  fields:
@@ -136,7 +125,6 @@ model: main.event
   description: "Learn about Wireshark's features and how to use it."
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 12
  fields:
@@ -148,7 +136,6 @@ model: main.event
   description: "Want to know some simple steps to secure your network? We will be covering a range of topics including port security, DHCP snooping, dynamic ARP inspection, and IP source guard."
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 13
  fields:
@@ -160,7 +147,6 @@ model: main.event
   description: "We will be discussing how VPNs work and why they're used. Then you'll get the chance to make your own VPN using a Cisco ASA!"
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 14
  fields:
@@ -172,7 +158,6 @@ model: main.event
   description: "Voice over IP is the modern phone technology that many companies have already switched to or are currently switching to. We will go over some basics of VoIP and how they differ from traditional phone systems. After that, you'll get to set up your own mini VoIP system and make some calls!"
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 15
  fields:
@@ -184,7 +169,6 @@ model: main.event
   description: "Come learn about Docker and the IST Labs infrastructure! View the presentations on Docker & CoreOS <a href=https://nexthop.network/docs/docker.pdf" target="_blank">here</a> and the IST Labs Infrastructure document <a href="https://nexthop.network/docs/istlabs.pdf" target="_blank">here</a>""
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 16
  fields:
@@ -196,7 +180,6 @@ model: main.event
   description: "Come learn about 6 to 4 tunnels and layer 2 tunneling."
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 17
  fields:
@@ -208,7 +191,6 @@ model: main.event
   description: "Enjoy presentations by Professor Jonathan Weissman on DNSSec and TSIG, Anthony Critelli on Network Access Controls, and Brandt Woolf on Linux and its hooks for packets."
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 18
  fields:
@@ -220,7 +202,6 @@ model: main.event
   description: "Info session, intro to routing & switching lab, and advanced routing lab."
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 19
  fields:
@@ -232,7 +213,6 @@ model: main.event
   description: "Come and join us for labs on IP Services such as DNS and DHCP."
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 20
  fields:
@@ -244,7 +224,6 @@ model: main.event
   description: "Ever wonder how all the wireless access point on campus are configured and manage? The lab will be configuring your own wireless network using a Cisco wireless controller."
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 21
  fields:
@@ -256,7 +235,6 @@ model: main.event
   description: "Brandt Woolf, RIT student and NextHop President speaking on Virtualization<br>Dr. Erik Golen, RIT Professor speaking on his IEEE Working Group<br>Mike Scholl, Cloud Engineer at OffsiteDataSync speaking on Cloud Backups"
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 22
  fields:
@@ -268,7 +246,6 @@ model: main.event
   description: "Come and learn about VoIP which is the future of telephony!"
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 23
  fields:
@@ -280,7 +257,6 @@ model: main.event
   description: "Come join us to learn how to boot an operating system over the network. This can be very useful for deploying an operating system to many computers at once."
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 24
  fields:
@@ -292,7 +268,6 @@ model: main.event
   description: "Come and join us to learn how to install ESXi and deploy a vCenter appliance!"
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 25
  fields:
@@ -304,7 +279,6 @@ model: main.event
   description: "Come and learn about Active Directory and RADIUS! What does that mean exactly? AD is a type of centralized user management and RADIUS is a means to have different types of application authentication agaisnt that user database."
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 26
  fields:
@@ -316,7 +290,6 @@ model: main.event
   description: "Bruce Hartpence: Multicast<br>Mark Manning: TOR<br>Garret Arcoraci: OSPF & EIGRP"
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 27
  fields:
@@ -328,7 +301,6 @@ model: main.event
   description: "RC3, SPARSA, CSC, NextHop, and WiC are coming together to have a relaxing party the Friday before finals called Festivus! The clubs plan to have a bad sweater contest, a holiday/cyber trivia game, and holiday movies. So come join us for the holiday season to celebrate with friends and make new friends. The clubs will be providing pizza, food, and drinks."
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 28
  fields:
@@ -340,7 +312,6 @@ model: main.event
   description: "NSIC is a competition for college students of all experience levels. Students get to build a enterprise topology from the ground up. Participants will be racing the clock, each other, and overcoming real world issues being thrown at them. For more info about NSIC and to sign up to compete or volunteer visit <a href="https://nsic.nexthop.network">nsic.nexthop.network</a>.""
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 29
  fields:
@@ -352,7 +323,6 @@ model: main.event
   description: "To get you ready for NSIC, we will be hosting a modified Build-it-Night on March 23rd where NextHop E-board will be around to assist with any questions regarding the list of possible topics for NSIC which can be seen below. Even if you are not competing this is a great opportunity to learn something new."
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 30
  fields:
@@ -364,7 +334,6 @@ model: main.event
   description: "Come join us for our first Tech Talks of the spring semester! The theme of these talks will be automation. At least one of the Tech Talks will be an interactive demo, so bring your laptops! We are planning on providing pizza and soda. Stay tuned for more details!"
   stream_url: ''
   resources: []
-
 -model: main.event
  pk: 31
  fields:
@@ -376,7 +345,6 @@ model: main.event
   description: "Come join us to learn about Border Gateway Protocol (BGP) which is how the internet works!"
   stream_url: ''
   resources: []
-
 - model: main.eboard
   pk: 1
   fields: {term: 2017-2018, president: Joe, president_email: joe@rit.edu, president_year_major: 4th
