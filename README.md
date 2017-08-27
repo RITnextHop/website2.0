@@ -3,7 +3,7 @@ NextHop.Network 2.0 Source Code
 
 Setup Env
 ---
-Follow this guide to setup Python 3.6 and Pip. (Virtual Environment not neccissary)
+Follow this guide to setup Python 3.6 and Pip. (Virtual Environment not necessary)
 
 https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-centos-7
 
