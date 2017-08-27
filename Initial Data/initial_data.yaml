@@ -89,7 +89,7 @@
     location: Golisano, 70-1435
     start_date_time: 2015-09-03 19:00:00
     end_date_time: 2015-09-03 20:00:00
-    description: "Info session and idea collaboration with an awesome demo! View the slides <a href="https://docs.google.com/presentation/d/19z-Qy__WXwp6VgkyMrIj_o8_HM7pBe6JagzLvCKKab8/edit?usp=sharing" target="_blank">here</a> and the live stream <a href="live.php">here</a>."
+    description: 'Info session and idea collaboration with an awesome demo! View the slides <a href="https://docs.google.com/presentation/d/19z-Qy__WXwp6VgkyMrIj_o8_HM7pBe6JagzLvCKKab8/edit?usp=sharing" target="_blank">here</a> and the live stream <a href="live.php">here</a>.'
     stream_url: ''
     resources: []
 - model: main.event
@@ -166,7 +166,7 @@
     location: Golisano, 70-1435
     start_date_time: 2016-03-16 19:00:00
     end_date_time: 2016-03-16 21:00:00
-    description: "Come learn about Docker and the IST Labs infrastructure! View the presentations on Docker & CoreOS <a href=https://nexthop.network/docs/docker.pdf" target="_blank">here</a> and the IST Labs Infrastructure document <a href="https://nexthop.network/docs/istlabs.pdf" target="_blank">here</a>"
+    description: 'Come learn about Docker and the IST Labs infrastructure! View the presentations on Docker & CoreOS <a href=https://nexthop.network/docs/docker.pdf" target="_blank">here</a> and the IST Labs Infrastructure document <a href="https://nexthop.network/docs/istlabs.pdf" target="_blank">here</a>'
     stream_url: ''
     resources: []
 - model: main.event
@@ -309,7 +309,7 @@
     location: RIT Simone Center
     start_date_time: 2017-04-01 8:00:00
     end_date_time: 2017-04-01 18:00:00
-    description: "NSIC is a competition for college students of all experience levels. Students get to build a enterprise topology from the ground up. Participants will be racing the clock, each other, and overcoming real world issues being thrown at them. For more info about NSIC and to sign up to compete or volunteer visit <a href="https://nsic.nexthop.network">nsic.nexthop.network</a>."
+    description: 'NSIC is a competition for college students of all experience levels. Students get to build a enterprise topology from the ground up. Participants will be racing the clock, each other, and overcoming real world issues being thrown at them. For more info about NSIC and to sign up to compete or volunteer visit <a href="https://nsic.nexthop.network">nsic.nexthop.network</a>.'
     stream_url: ''
     resources: []
 - model: main.event
