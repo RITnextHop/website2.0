@@ -9,7 +9,9 @@ https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set
 
 Configure Data
 ---
-The 'Initial Data' directory contains a yaml file of initial website data such as Club Info, Eboard, etc. This file must be imported for the index page to load. Otherwise 
+The 'Initial Data' directory contains a yaml file of initial website data such as Club Info, Eboard, Past Events, etc. If this file is not imported a superuser must be created and Club Info and eboard must be populated for index page to load.
+
+To intialize the website with data and a superuser, run the below commands from the project root directory. 
 
     rm -rf db.sqlite3
 
