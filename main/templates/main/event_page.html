@@ -23,7 +23,7 @@
             {{ event.description | linebreaks}}
             <br>
             {% for resource in event.resources.all %}
-                <br><br><iframe src="./resource.link" align="left" width="800" height="500"></iframe>
+                <br><br><iframe src="{{ resource.link }}" align="left" width="800" height="500"></iframe>
             {% endfor %}
             {% if 'http' in event.stream_url %}
                 <br><br><iframe src="{{ event.stream_url }}" align="left" width="800" height="500" allowfullscreen></iframe>
