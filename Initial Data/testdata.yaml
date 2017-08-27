@@ -79,7 +79,7 @@
   pk: 6
   fields:
     type: Build-It-Night
-    tile: Multi-Vendor Networking!
+    title: Multi-Vendor Networking!
     location: Golisano, 70-2130 - Projects Lab
     start_date_time: 2014-11-20 19:00:00
     end_date_time: 2014-11-20 21:00:00
