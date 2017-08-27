@@ -75,6 +75,17 @@
     description: Test
     stream_url: ''
     resources: [1]
+-model: main.event
+  pk: 6
+  fields:
+    type: Build-It-Night
+    tile: Multi-Vendor Networking!
+    location: Golisano, 70-2130 - Projects Lab
+    start_date_time: 2014-11-20 19:00:00
+    end_date_time: 2014-11-20 21:00:00
+    description: "First NextHop Build-It-Night: Multi-Vendor Networking!"
+    stream_url: ''
+    resources: []
 - model: main.eboard
   pk: 1
   fields: {term: 2017-2018, president: Joe, president_email: joe@rit.edu, president_year_major: 4th
