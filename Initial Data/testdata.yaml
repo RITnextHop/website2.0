@@ -75,7 +75,7 @@
     description: Test
     stream_url: ''
     resources: [1]
--model: main.event
+- model: main.event
   pk: 6
   fields:
     type: Build-It-Night
