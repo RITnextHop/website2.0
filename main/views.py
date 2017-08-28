@@ -60,7 +60,7 @@ def Docs(request):
     data = {
         'resources': Resource.objects.all(),
     }
-    return render(request, 'main/all_docs.html',m data)
+    return render(request, 'main/all_docs.html', data)
 
 def DocPage(request, sem_folder, doc_name):
     print(sem_folder)
