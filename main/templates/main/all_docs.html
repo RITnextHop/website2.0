@@ -1,0 +1,10 @@
+{% extends 'main/header.html' %}
+
+{% block content %}
+
+{% for resource in resouces %}
+    <a href='{{ resource.link }}'<li>{{ resouce.name }}</li></a>
+{% endfor %}
+
+
+{% endblock %}
