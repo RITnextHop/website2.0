@@ -65,7 +65,7 @@ def Docs(request):
 def DocPage(request, doc_name):
     #print(sem_folder)
     #print(doc_name)
-    filepath='/docs/'+doc_name
+    filepath='docs/'+doc_name
     #print(filepath)
     with open(filepath, 'rb') as pdf:
         response = HttpResponse(pdf.read(), content_type='application/pdf')
