@@ -120,8 +120,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+MEDIA_ROOT = '/docs/'
+
 # Additional locations of static files
 STATICFILES_DIRS = (
     # location of your application, should not be public web accessible 
-    '/home/nexthop/nexthop/main/static',
+    '/main/static/',
 )
