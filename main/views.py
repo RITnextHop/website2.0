@@ -55,3 +55,6 @@ def EventPage(request, event_url):
             'event': current_event
         }
         return render(request, 'main/event_page.html', data)
+
+def DocPage(request, doc):
+    print(doc)
