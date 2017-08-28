@@ -57,6 +57,7 @@ def EventPage(request, event_url):
         return render(request, 'main/event_page.html', data)
 
 def Docs(request):
+    raise Http404('')
     
 def DocPage(request, sem_folder, doc_name):
     print(sem_folder)
