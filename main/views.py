@@ -58,11 +58,11 @@ def EventPage(request, event_url):
 
 def Docs(request):
     raise Http404('')
-    
+
 def DocPage(request, sem_folder, doc_name):
     print(sem_folder)
     print(doc_name)
-    filepath=sem_folder+'/'+doc_name
+    filepath='docs/'+sem_folder+'/'+doc_name
     print(filepath)
      #with open(sem, 'rb') as pdf:
       #  response = HttpResponse(pdf.read(), content_type='application/pdf')
