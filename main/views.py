@@ -56,5 +56,5 @@ def EventPage(request, event_url):
         }
         return render(request, 'main/event_page.html', data)
 
-def DocPage(request, doc):
+def DocPage(request, doc_name):
     print(doc)
