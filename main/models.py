@@ -4,7 +4,8 @@ from django.template.defaultfilters import slugify
 # Create your models here.
 class Resource(models.Model):
     title = models.CharField(max_length=100)
-    link = models.CharField(max_length=100, help_text='MUST BE IN THIS FORMAT: /docs/SEM_FOLDER/FILE_NAME. ie /docs/Spring_2017/BGPv2.pdf')
+    file = models.FileField(upload_to='pdf')
+    #link = models.CharField(max_length=100, help_text='MUST BE IN THIS FORMAT: /docs/SEM_FOLDER/FILE_NAME. ie /docs/Spring_2017/BGPv2.pdf')
 
     def __str__(self):
         return self.title
@@ -69,8 +70,4 @@ class ClubInfo(models.Model):
 
     class Meta:
         verbose_name_plural = "Club Info"
-
-class TestPDF(models.Model):
-    name = models.CharField(max_length=200)
-    pdf = models.FileField(upload_to='pdf')
     
