@@ -64,8 +64,8 @@ def DocPage(request, sem_folder, doc_name):
     print(doc_name)
     filepath='docs/'+sem_folder+'/'+doc_name
     print(filepath)
-     #with open(sem, 'rb') as pdf:
-      #  response = HttpResponse(pdf.read(), content_type='application/pdf')
-       # response['Content-Disposition'] = 'inline;filename=some_file.pdf'
-        #return response
-    #pdf.closed
+    with open(filepath, 'rb') as pdf:
+        response = HttpResponse(pdf.read(), content_type='application/pdf')
+        response['Content-Disposition'] = 'inline;filename=some_file.pdf'
+        return response
+    pdf.closed
