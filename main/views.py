@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .models import *
 import datetime
-from django.http import Http404
+from django.http import Http404, HttpResponse
 
 # Create your views here.
 
