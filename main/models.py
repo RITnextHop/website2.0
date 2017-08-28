@@ -69,4 +69,8 @@ class ClubInfo(models.Model):
 
     class Meta:
         verbose_name_plural = "Club Info"
+
+class TestPDF(models.Model):
+    name = models.CharField(max_length=200)
+    pdf = models.FileField(upload_to='pdf')
     
