@@ -4,7 +4,7 @@ from django.template.defaultfilters import slugify
 # Create your models here.
 class Resource(models.Model):
     title = models.CharField(max_length=100)
-    file = models.FileField(upload_to='pdf')
+    file = models.FileField()
     #link = models.CharField(max_length=100, help_text='MUST BE IN THIS FORMAT: /docs/SEM_FOLDER/FILE_NAME. ie /docs/Spring_2017/BGPv2.pdf')
 
     def __str__(self):
