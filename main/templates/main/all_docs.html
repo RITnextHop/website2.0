@@ -1,11 +1,11 @@
 {% extends 'main/header.html' %}
 
 {% block content %}
-<li>
+<ul>
 {% for resource in resources %}
-    <a href='.{{ resource.link }}'<ul>{{ resouce.name }}</ul></a>
+    <a href='.{{ resource.link }}'<li>{{ resouce.name }}</li></a>
 {% endfor %}
-<li>
+<ul>
 
 
 {% endblock %}
