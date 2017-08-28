@@ -81,7 +81,7 @@
     end_date_time: 2015-04-30 21:00:00
     description: "Learn about PXE (Pre-Execution Environment) which involves booting an operating system on a computer over the network. You'll get to learn about it and build your own PXE server! This is a critical piece of technology used in many infrastructures to image machines and is not taught in any classes."
     stream_url: ''
-    resources: []
+    resources: [1]
 - model: main.event
   pk: 7
   fields:
