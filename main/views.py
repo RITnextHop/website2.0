@@ -68,7 +68,7 @@ def DocPage(request, doc_name):
     filepath='docs/'+doc_name
     #print(filepath)
     with open(filepath, 'rb') as pdf:
-        response = HttpResponse(pdf.read(), content_type='application/pdf')
-        response['Content-Disposition'] = 'inline;filename=some_file.pdf'
+        response = HttpResponse(pdf.read())#, content_type='application/pdf')
+        #response['Content-Disposition'] = 'inline;filename=some_file.pdf'
         return response
     pdf.closed
