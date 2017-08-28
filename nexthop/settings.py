@@ -120,7 +120,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = '/docs/'
+MEDIA_ROOT = '/main/docs/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
