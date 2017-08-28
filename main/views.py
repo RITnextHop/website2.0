@@ -62,11 +62,11 @@ def Docs(request):
     }
     return render(request, 'main/all_docs.html', data)
 
-def DocPage(request, sem_folder, doc_name):
-    print(sem_folder)
-    print(doc_name)
-    filepath='/home/nexthop/nexthop/main/docs/'+sem_folder+'/'+doc_name
-    print(filepath)
+def DocPage(request, doc_name):
+    #print(sem_folder)
+    #print(doc_name)
+    filepath='/docs/'+doc_name
+    #print(filepath)
     with open(filepath, 'rb') as pdf:
         response = HttpResponse(pdf.read(), content_type='application/pdf')
         response['Content-Disposition'] = 'inline;filename=some_file.pdf'
