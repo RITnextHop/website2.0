@@ -62,7 +62,7 @@ def Docs(request):
 def DocPage(request, sem_folder, doc_name):
     print(sem_folder)
     print(doc_name)
-    filepath='/home/nexthop/nexthop/docs/'+sem_folder+'/'+doc_name
+    filepath='/home/nexthop/nexthop/Docs/'+sem_folder+'/'+doc_name
     print(filepath)
     with open(filepath, 'rb') as pdf:
         response = HttpResponse(pdf.read(), content_type='application/pdf')
