@@ -11,6 +11,17 @@ Configure Data
 ---
 The 'Initial Data' directory contains a yaml file of initial website data such as Club Info, Eboard, Past Events, etc. If this file is not imported a superuser must be created and Club Info and eboard must be populated for index page to load.
 
+### Easy Way Out
+
+In project root directory run these two commands
+
+    chmod +x deploy.sh
+
+    ./deploy.sh
+
+
+### Do it yourself
+
 To intialize the website with data and a superuser, run the below commands from the project root directory. 
 
     rm -rf db.sqlite3
