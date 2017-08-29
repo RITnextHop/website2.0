@@ -9,6 +9,6 @@ urlpatterns = [
     url(r'events/$', views.Events, name='events'),
     url(r'^events/(?P<event_url>[\w-]+)/$', views.EventPage, name='event_page'),
     url(r'docs/$', views.Docs, name='docs'),
-    url(r'^docs/(?P<doc_name>[\w.]+)', views.DocPage, name='doc'),
+    url(r'^docs/(?P<doc_name>[.*]+)', views.DocPage, name='doc'),
     url(r'contact_us/$', views.Contact, name='contact'),
 ]
