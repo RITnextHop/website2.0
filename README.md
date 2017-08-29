@@ -30,7 +30,7 @@ To intialize the website with data and a superuser, run the below commands from 
 
     python3.6 manage.py migrate --run-syncdb
 
-    python3.6 manage.py loaddata Initial\ Data/initial_data.yaml
+    python3.6 manage.py loaddata Initial\ Data/initial_data_v2.yaml
 
 Run Test Server
 ---
