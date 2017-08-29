@@ -1,0 +1,647 @@
+- model: contenttypes.contenttype
+  pk: 1
+  fields: {app_label: admin, model: logentry}
+- model: contenttypes.contenttype
+  pk: 2
+  fields: {app_label: auth, model: permission}
+- model: contenttypes.contenttype
+  pk: 3
+  fields: {app_label: auth, model: group}
+- model: contenttypes.contenttype
+  pk: 4
+  fields: {app_label: auth, model: user}
+- model: contenttypes.contenttype
+  pk: 5
+  fields: {app_label: contenttypes, model: contenttype}
+- model: contenttypes.contenttype
+  pk: 6
+  fields: {app_label: sessions, model: session}
+- model: contenttypes.contenttype
+  pk: 7
+  fields: {app_label: main, model: resource}
+- model: contenttypes.contenttype
+  pk: 8
+  fields: {app_label: main, model: event}
+- model: contenttypes.contenttype
+  pk: 9
+  fields: {app_label: main, model: eboard}
+- model: contenttypes.contenttype
+  pk: 10
+  fields: {app_label: main, model: clubinfo}
+- model: sessions.session
+  pk: xwbsrkmfgmhcaw0ur2ljx1thszpvuy79
+  fields: {session_data: ZjlhNGQyOTU3NzJlZDAwN2I4NzAzZmExZDBhZDI5MzhiMjFjNjU5Mzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIwYTQwYmQ2NmQzNzBhNjVlOGQ4NmZmOWY2OWExYmNlMDI4ZDdjMzhhIn0=,
+    expire_date: !!timestamp '2017-08-28 06:36:15.323042+00:00'}
+- model: main.resource
+  pk: 7
+  fields: {title: bin4, file: docs/bin4.pdf}
+- model: main.event
+  pk: 1
+  fields:
+    type: Other
+    title: Initial NextHop Meeting!
+    location: Golisano, 70-2400
+    start_date_time: 2014-11-06 23:30:00+00:00
+    end_date_time: 2014-11-07 00:30:00+00:00
+    description: dfdsfsdfsdf
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 2
+  fields:
+    type: Build-It-Night
+    title: Multi-Vendor Networking!
+    location: Golisano, 70-2130 - Projects Lab
+    start_date_time: 2014-11-21 00:00:00+00:00
+    end_date_time: 2014-11-21 02:00:00+00:00
+    description: 'First NextHop Build-It-Night: Multi-Vendor Networking!'
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 3
+  fields:
+    type: Build-It-Night
+    title: DHCP/DNS
+    location: Golisano, 70-2320
+    start_date_time: 2015-03-12 23:00:00+00:00
+    end_date_time: 2015-03-13 01:00:00+00:00
+    description: Learn about DHCP or DNS or refresh your knowledge!
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 4
+  fields:
+    type: Build-It-Night
+    title: The Lamp Stack
+    location: Golisano, 70-2320
+    start_date_time: 2015-04-02 23:00:00+00:00
+    end_date_time: 2015-04-03 01:00:00+00:00
+    description: Join us to get down and dirty with the LAMP (Linux, Apache, MySQL,
+      PHP) stack. Learn how to setup the infrastructure needed to support a dynamic
+      website or web application. Learners of all skill levels are welcome.
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 5
+  fields:
+    type: Tech Talks
+    title: First Tech Talks!
+    location: Golisano, 70-1455
+    start_date_time: 2015-04-16 23:00:00+00:00
+    end_date_time: 2015-04-17 01:00:00+00:00
+    description: Come learn about cool things like SLAAC and Google Authenticator!
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 6
+  fields:
+    type: Build-It-Night
+    title: PXE
+    location: Golisano, 70-2320
+    start_date_time: 2015-04-30 23:00:00+00:00
+    end_date_time: 2015-05-01 01:00:00+00:00
+    description: Learn about PXE (Pre-Execution Environment) which involves booting
+      an operating system on a computer over the network. You'll get to learn about
+      it and build your own PXE server! This is a critical piece of technology used
+      in many infrastructures to image machines and is not taught in any classes.
+    stream_url: ''
+    resources: [7]
+- model: main.event
+  pk: 7
+  fields:
+    type: Other
+    title: Yahoo! Data Center Road Trip
+    location: Meetup TBA
+    start_date_time: 2015-05-14 14:00:00+00:00
+    end_date_time: 2015-05-14 21:00:00+00:00
+    description: Hit the road with NextHop as we head out and tour the Yahoo! Data
+      Center. More information to come!
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 8
+  fields:
+    type: Other
+    title: General Meeting/Info Session
+    location: Golisano, 70-1435
+    start_date_time: 2015-09-03 23:00:00+00:00
+    end_date_time: 2015-09-04 00:00:00+00:00
+    description: Info session and idea collaboration with an awesome demo! View the
+      slides <a href="https://docs.google.com/presentation/d/19z-Qy__WXwp6VgkyMrIj_o8_HM7pBe6JagzLvCKKab8/edit?usp=sharing"
+      target="_blank">here</a> and the live stream <a href="live.php">here</a>.
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 9
+  fields:
+    type: Build-It-Night
+    title: BGP
+    location: Golisano, 70-2160 (Netlab)
+    start_date_time: 2015-10-08 23:00:00+00:00
+    end_date_time: 2015-10-09 01:00:00+00:00
+    description: Learn about and configure BGP, the routing protocol of the internet.
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 10
+  fields:
+    type: Build-It-Night
+    title: ACLs and NAT
+    location: Golisano, 70-2160 (Netlab)
+    start_date_time: 2015-10-15 23:00:00+00:00
+    end_date_time: 2015-10-16 01:00:00+00:00
+    description: Learn about and configure access control lists and how to implement
+      NAT.
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 11
+  fields:
+    type: Tech Talks
+    title: Wireshark
+    location: Golisano, 70-1435
+    start_date_time: 2015-11-13 00:00:00+00:00
+    end_date_time: 2015-11-13 02:00:00+00:00
+    description: Learn about Wireshark's features and how to use it.
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 12
+  fields:
+    type: Build-It-Night
+    title: Securing Your Network
+    location: Golisano, 70-2160 (Netlab)
+    start_date_time: 2016-02-04 00:00:00+00:00
+    end_date_time: 2016-02-04 02:00:00+00:00
+    description: Want to know some simple steps to secure your network? We will be
+      covering a range of topics including port security, DHCP snooping, dynamic ARP
+      inspection, and IP source guard.
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 13
+  fields:
+    type: Build-It-Night
+    title: VPNs
+    location: Golisano, 70-2160 (Netlab)
+    start_date_time: 2016-02-18 00:00:00+00:00
+    end_date_time: 2016-02-18 02:00:00+00:00
+    description: We will be discussing how VPNs work and why they're used. Then you'll
+      get the chance to make your own VPN using a Cisco ASA!
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 14
+  fields:
+    type: Build-It-Night
+    title: VoIP
+    location: Golisano, 70-2130 (Projects Lab)
+    start_date_time: 2016-03-03 00:00:00+00:00
+    end_date_time: 2016-03-03 02:00:00+00:00
+    description: Voice over IP is the modern phone technology that many companies
+      have already switched to or are currently switching to. We will go over some
+      basics of VoIP and how they differ from traditional phone systems. After that,
+      you'll get to set up your own mini VoIP system and make some calls!
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 15
+  fields:
+    type: Tech Talks
+    title: Docker and IST Labs Infrastructure
+    location: Golisano, 70-1435
+    start_date_time: 2016-03-16 23:00:00+00:00
+    end_date_time: 2016-03-17 01:00:00+00:00
+    description: Come learn about Docker and the IST Labs infrastructure! View the
+      presentations on Docker & CoreOS <a href=https://nexthop.network/docs/docker.pdf"
+      target="_blank">here</a> and the IST Labs Infrastructure document <a href="https://nexthop.network/docs/istlabs.pdf"
+      target="_blank">here</a>
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 16
+  fields:
+    type: Build-It-Night
+    title: Tunneling
+    location: Golisano, 70-2160 (Netlab)
+    start_date_time: 2016-04-27 23:00:00+00:00
+    end_date_time: 2016-04-28 01:00:00+00:00
+    description: Come learn about 6 to 4 tunnels and layer 2 tunneling.
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 17
+  fields:
+    type: Tech Talks
+    title: DNSSec, TSIG, NAC, and Linux Hooks for Packets
+    location: Golisano, 70-2590
+    start_date_time: 2016-05-12 23:00:00+00:00
+    end_date_time: 2016-05-13 01:00:00+00:00
+    description: Enjoy presentations by Professor Jonathan Weissman on DNSSec and
+      TSIG, Anthony Critelli on Network Access Controls, and Brandt Woolf on Linux
+      and its hooks for packets.
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 18
+  fields:
+    type: Build-It-Night
+    title: Kicking Off A New Year
+    location: GOL-2160 (Net Lab)
+    start_date_time: 2016-08-30 23:00:00+00:00
+    end_date_time: 2016-08-31 01:00:00+00:00
+    description: Info session, intro to routing & switching lab, and advanced routing
+      lab.
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 19
+  fields:
+    type: Build-It-Night
+    title: IP Services
+    location: GOL-2160 (Net Lab)
+    start_date_time: 2016-09-13 23:00:00+00:00
+    end_date_time: 2016-09-14 01:00:00+00:00
+    description: Come and join us for labs on IP Services such as DNS and DHCP.
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 20
+  fields:
+    type: Build-It-Night
+    title: Wireless Networking
+    location: GOL-2160 (Net Lab)
+    start_date_time: 2016-09-27 23:00:00+00:00
+    end_date_time: 2016-09-28 01:00:00+00:00
+    description: Ever wonder how all the wireless access point on campus are configured
+      and manage? The lab will be configuring your own wireless network using a Cisco
+      wireless controller.
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 21
+  fields:
+    type: Tech Talks
+    title: Cloud and Virtualization
+    location: GOL-2400
+    start_date_time: 2016-10-18 23:00:00+00:00
+    end_date_time: 2016-10-19 01:00:00+00:00
+    description: Brandt Woolf, RIT student and NextHop President speaking on Virtualization<br>Dr.
+      Erik Golen, RIT Professor speaking on his IEEE Working Group<br>Mike Scholl,
+      Cloud Engineer at OffsiteDataSync speaking on Cloud Backups
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 22
+  fields:
+    type: Build-It-Night
+    title: VoIP
+    location: GOL-2160
+    start_date_time: 2016-10-25 23:00:00+00:00
+    end_date_time: 2016-10-26 01:00:00+00:00
+    description: Come and learn about VoIP which is the future of telephony!
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 23
+  fields:
+    type: Build-It-Night
+    title: PXE
+    location: 70-2320 (Sys Lab)
+    start_date_time: 2017-02-17 00:00:00+00:00
+    end_date_time: 2017-02-17 02:00:00+00:00
+    description: Come join us to learn how to boot an operating system over the network.
+      This can be very useful for deploying an operating system to many computers
+      at once.
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 24
+  fields:
+    type: Build-It-Night
+    title: Virtualization
+    location: 70-2320 (Sys Lab)
+    start_date_time: 2017-02-03 00:00:00+00:00
+    end_date_time: 2017-02-03 02:00:00+00:00
+    description: Come and join us to learn how to install ESXi and deploy a vCenter
+      appliance!
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 25
+  fields:
+    type: Build-It-Night
+    title: AD & RADIUS
+    location: GOL-2160
+    start_date_time: 2016-11-09 00:00:00+00:00
+    end_date_time: 2016-11-09 02:00:00+00:00
+    description: Come and learn about Active Directory and RADIUS! What does that
+      mean exactly? AD is a type of centralized user management and RADIUS is a means
+      to have different types of application authentication agaisnt that user database.
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 26
+  fields:
+    type: Tech Talks
+    title: Networking
+    location: GOL-2400
+    start_date_time: 2016-11-30 00:00:00+00:00
+    end_date_time: 2016-11-30 02:00:00+00:00
+    description: 'Bruce Hartpence: Multicast<br>Mark Manning: TOR<br>Garret Arcoraci:
+      OSPF & EIGRP'
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 27
+  fields:
+    type: Other
+    title: GCCIS Clubs Festivus Party
+    location: 70-1400
+    start_date_time: 2016-12-09 17:00:00+00:00
+    end_date_time: 2016-12-09 21:00:00+00:00
+    description: RC3, SPARSA, CSC, NextHop, and WiC are coming together to have a
+      relaxing party the Friday before finals called Festivus! The clubs plan to have
+      a bad sweater contest, a holiday/cyber trivia game, and holiday movies. So come
+      join us for the holiday season to celebrate with friends and make new friends.
+      The clubs will be providing pizza, food, and drinks.
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 28
+  fields:
+    type: Other
+    title: NSIC 2017
+    location: RIT Simone Center
+    start_date_time: 2017-04-01 12:00:00+00:00
+    end_date_time: 2017-04-01 22:00:00+00:00
+    description: NSIC is a competition for college students of all experience levels.
+      Students get to build a enterprise topology from the ground up. Participants
+      will be racing the clock, each other, and overcoming real world issues being
+      thrown at them. For more info about NSIC and to sign up to compete or volunteer
+      visit <a href="https://nsic.nexthop.network">nsic.nexthop.network</a>.
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 29
+  fields:
+    type: Build-It-Night
+    title: NSIC Prep
+    location: 70-2320 (Sys Lab)
+    start_date_time: 2017-03-30 23:00:00+00:00
+    end_date_time: 2017-03-31 01:00:00+00:00
+    description: To get you ready for NSIC, we will be hosting a modified Build-it-Night
+      on March 23rd where NextHop E-board will be around to assist with any questions
+      regarding the list of possible topics for NSIC which can be seen below. Even
+      if you are not competing this is a great opportunity to learn something new.
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 30
+  fields:
+    type: Tech Talks
+    title: Automation
+    location: 70-2400
+    start_date_time: 2017-03-03 00:00:00+00:00
+    end_date_time: 2017-03-03 02:00:00+00:00
+    description: Come join us for our first Tech Talks of the spring semester! The
+      theme of these talks will be automation. At least one of the Tech Talks will
+      be an interactive demo, so bring your laptops! We are planning on providing
+      pizza and soda. Stay tuned for more details!
+    stream_url: ''
+    resources: []
+- model: main.event
+  pk: 31
+  fields:
+    type: Build-It-Night
+    title: BGP
+    location: 70-2320
+    start_date_time: 2017-05-04 23:00:00+00:00
+    end_date_time: 2017-05-05 01:00:00+00:00
+    description: Come join us to learn about Border Gateway Protocol (BGP) which is
+      how the internet works!
+    stream_url: ''
+    resources: []
+- model: main.eboard
+  pk: 1
+  fields: {term: 2017-2018, president: Joe, president_email: joe@rit.edu, president_year_major: 4th
+      year CSEC, vice_president: Thomas, vp_email: thomas@rit.edu, vp_year_major: 3rd
+      year CIT, secretary: Tyler, secretary_email: tyler@rit.edu, secretary_year_major: 4th
+      year CIT, treasurer: Peter, treasurer_email: peter@rit.edu, treasurer_year_major: 1st
+      year Grad, advisor: Garret, advisor_email: garret@rit.edu, advisor_postion: CIT
+      Professor}
+- model: main.clubinfo
+  pk: 1
+  fields: {mission: "NextHop is a club at the Rochester Institute of Technology (RIT)\
+      \ focused on networking and systems administration. NextHop is all about moving\
+      \ information and managing different services that run on a network.\r\n\r\n\
+      Our interactive learning community is built on our hands-on Build-It-Nights\
+      \ where members configure and work with a new technology, and our informative\
+      \ TechTalks in which student members and industry professionals present and\
+      \ discuss new themes, technologies, and practices. Our members come from a diverse\
+      \ group of majors and experience levels. All are welcome to join us at any point\
+      \ during the academic year.", email: nexthop@rit.edu, club_page: 'https://thelink.rit.edu/organization/NextHop',
+    twitter: 'https://twitter.com/ritnexthop', facebook: 'https://www.facebook.com/groups/ritnexthop/'}
+- model: auth.permission
+  pk: 1
+  fields: {name: Can add log entry, content_type: 1, codename: add_logentry}
+- model: auth.permission
+  pk: 2
+  fields: {name: Can change log entry, content_type: 1, codename: change_logentry}
+- model: auth.permission
+  pk: 3
+  fields: {name: Can delete log entry, content_type: 1, codename: delete_logentry}
+- model: auth.permission
+  pk: 4
+  fields: {name: Can add permission, content_type: 2, codename: add_permission}
+- model: auth.permission
+  pk: 5
+  fields: {name: Can change permission, content_type: 2, codename: change_permission}
+- model: auth.permission
+  pk: 6
+  fields: {name: Can delete permission, content_type: 2, codename: delete_permission}
+- model: auth.permission
+  pk: 7
+  fields: {name: Can add group, content_type: 3, codename: add_group}
+- model: auth.permission
+  pk: 8
+  fields: {name: Can change group, content_type: 3, codename: change_group}
+- model: auth.permission
+  pk: 9
+  fields: {name: Can delete group, content_type: 3, codename: delete_group}
+- model: auth.permission
+  pk: 10
+  fields: {name: Can add user, content_type: 4, codename: add_user}
+- model: auth.permission
+  pk: 11
+  fields: {name: Can change user, content_type: 4, codename: change_user}
+- model: auth.permission
+  pk: 12
+  fields: {name: Can delete user, content_type: 4, codename: delete_user}
+- model: auth.permission
+  pk: 13
+  fields: {name: Can add content type, content_type: 5, codename: add_contenttype}
+- model: auth.permission
+  pk: 14
+  fields: {name: Can change content type, content_type: 5, codename: change_contenttype}
+- model: auth.permission
+  pk: 15
+  fields: {name: Can delete content type, content_type: 5, codename: delete_contenttype}
+- model: auth.permission
+  pk: 16
+  fields: {name: Can add session, content_type: 6, codename: add_session}
+- model: auth.permission
+  pk: 17
+  fields: {name: Can change session, content_type: 6, codename: change_session}
+- model: auth.permission
+  pk: 18
+  fields: {name: Can delete session, content_type: 6, codename: delete_session}
+- model: auth.permission
+  pk: 19
+  fields: {name: Can add resource, content_type: 7, codename: add_resource}
+- model: auth.permission
+  pk: 20
+  fields: {name: Can change resource, content_type: 7, codename: change_resource}
+- model: auth.permission
+  pk: 21
+  fields: {name: Can delete resource, content_type: 7, codename: delete_resource}
+- model: auth.permission
+  pk: 22
+  fields: {name: Can add event, content_type: 8, codename: add_event}
+- model: auth.permission
+  pk: 23
+  fields: {name: Can change event, content_type: 8, codename: change_event}
+- model: auth.permission
+  pk: 24
+  fields: {name: Can delete event, content_type: 8, codename: delete_event}
+- model: auth.permission
+  pk: 25
+  fields: {name: Can add eboard, content_type: 9, codename: add_eboard}
+- model: auth.permission
+  pk: 26
+  fields: {name: Can change eboard, content_type: 9, codename: change_eboard}
+- model: auth.permission
+  pk: 27
+  fields: {name: Can delete eboard, content_type: 9, codename: delete_eboard}
+- model: auth.permission
+  pk: 28
+  fields: {name: Can add club info, content_type: 10, codename: add_clubinfo}
+- model: auth.permission
+  pk: 29
+  fields: {name: Can change club info, content_type: 10, codename: change_clubinfo}
+- model: auth.permission
+  pk: 30
+  fields: {name: Can delete club info, content_type: 10, codename: delete_clubinfo}
+- model: auth.user
+  pk: 1
+  fields:
+    password: pbkdf2_sha256$36000$LjjIXiqGdXiF$bIjD8D84Vc5AJarrNj8RZ8Amyu2/r5hUoXgiNxZWp4g=
+    last_login: 2017-08-14 06:36:15.319023+00:00
+    is_superuser: true
+    username: root
+    first_name: ''
+    last_name: ''
+    email: root@nexthop.network
+    is_staff: true
+    is_active: true
+    date_joined: 2017-08-13 07:19:08.363794+00:00
+    groups: []
+    user_permissions: []
+- model: admin.logentry
+  pk: 1
+  fields: {action_time: !!timestamp '2017-08-14 06:36:37.881427+00:00', user: 1, content_type: 7,
+    object_id: '1', object_repr: First Bin, action_flag: 1, change_message: '[{"added":
+      {}}]'}
+- model: admin.logentry
+  pk: 2
+  fields: {action_time: !!timestamp '2017-08-14 06:36:49.909712+00:00', user: 1, content_type: 8,
+    object_id: '2', object_repr: Multi-Vendor Networking!, action_flag: 2, change_message: '[]'}
+- model: admin.logentry
+  pk: 3
+  fields: {action_time: !!timestamp '2017-08-14 06:40:03.588603+00:00', user: 1, content_type: 7,
+    object_id: '1', object_repr: First Bin, action_flag: 2, change_message: '[{"changed":
+      {"fields": ["file"]}}]'}
+- model: admin.logentry
+  pk: 4
+  fields: {action_time: !!timestamp '2017-08-14 06:53:23.997448+00:00', user: 1, content_type: 7,
+    object_id: '1', object_repr: First Bin, action_flag: 3, change_message: ''}
+- model: admin.logentry
+  pk: 5
+  fields: {action_time: !!timestamp '2017-08-14 06:53:33.952042+00:00', user: 1, content_type: 7,
+    object_id: '2', object_repr: Bin1, action_flag: 1, change_message: '[{"added":
+      {}}]'}
+- model: admin.logentry
+  pk: 6
+  fields: {action_time: !!timestamp '2017-08-14 06:54:25.867566+00:00', user: 1, content_type: 7,
+    object_id: '2', object_repr: Bin1, action_flag: 3, change_message: ''}
+- model: admin.logentry
+  pk: 7
+  fields: {action_time: !!timestamp '2017-08-14 06:54:36.291552+00:00', user: 1, content_type: 7,
+    object_id: '3', object_repr: bin1, action_flag: 1, change_message: '[{"added":
+      {}}]'}
+- model: admin.logentry
+  pk: 8
+  fields: {action_time: !!timestamp '2017-08-14 06:56:08.360069+00:00', user: 1, content_type: 7,
+    object_id: '3', object_repr: bin1, action_flag: 3, change_message: ''}
+- model: admin.logentry
+  pk: 9
+  fields: {action_time: !!timestamp '2017-08-14 06:56:39.432404+00:00', user: 1, content_type: 7,
+    object_id: '4', object_repr: bin1, action_flag: 1, change_message: '[{"added":
+      {}}]'}
+- model: admin.logentry
+  pk: 10
+  fields: {action_time: !!timestamp '2017-08-14 07:00:41.131009+00:00', user: 1, content_type: 7,
+    object_id: '4', object_repr: bin1, action_flag: 3, change_message: ''}
+- model: admin.logentry
+  pk: 11
+  fields: {action_time: !!timestamp '2017-08-14 07:01:04.703292+00:00', user: 1, content_type: 7,
+    object_id: '5', object_repr: bgp, action_flag: 1, change_message: '[{"added":
+      {}}]'}
+- model: admin.logentry
+  pk: 12
+  fields: {action_time: !!timestamp '2017-08-14 07:05:05.175963+00:00', user: 1, content_type: 7,
+    object_id: '5', object_repr: bgp, action_flag: 3, change_message: ''}
+- model: admin.logentry
+  pk: 13
+  fields: {action_time: !!timestamp '2017-08-14 07:05:15.480984+00:00', user: 1, content_type: 7,
+    object_id: '6', object_repr: bin4, action_flag: 1, change_message: '[{"added":
+      {}}]'}
+- model: admin.logentry
+  pk: 14
+  fields: {action_time: !!timestamp '2017-08-14 07:06:53.647585+00:00', user: 1, content_type: 8,
+    object_id: '6', object_repr: PXE, action_flag: 2, change_message: '[]'}
+- model: admin.logentry
+  pk: 15
+  fields: {action_time: !!timestamp '2017-08-14 07:10:36.336926+00:00', user: 1, content_type: 7,
+    object_id: '6', object_repr: bin4, action_flag: 3, change_message: ''}
+- model: admin.logentry
+  pk: 16
+  fields: {action_time: !!timestamp '2017-08-14 07:10:45.405425+00:00', user: 1, content_type: 7,
+    object_id: '7', object_repr: bin4, action_flag: 1, change_message: '[{"added":
+      {}}]'}
+- model: admin.logentry
+  pk: 17
+  fields: {action_time: !!timestamp '2017-08-14 07:10:55.043704+00:00', user: 1, content_type: 8,
+    object_id: '6', object_repr: PXE, action_flag: 2, change_message: '[]'}
+- model: admin.logentry
+  pk: 18
+  fields: {action_time: !!timestamp '2017-08-14 07:16:12.392386+00:00', user: 1, content_type: 7,
+    object_id: '8', object_repr: test doc, action_flag: 1, change_message: '[{"added":
+      {}}]'}
+- model: admin.logentry
+  pk: 19
+  fields: {action_time: !!timestamp '2017-08-14 07:16:56.038090+00:00', user: 1, content_type: 8,
+    object_id: '1', object_repr: Initial NextHop Meeting!, action_flag: 2, change_message: '[{"changed":
+      {"fields": ["description"]}}]'}
+- model: admin.logentry
+  pk: 20
+  fields: {action_time: !!timestamp '2017-08-14 07:17:39.673339+00:00', user: 1, content_type: 8,
+    object_id: '1', object_repr: Initial NextHop Meeting!, action_flag: 2, change_message: '[]'}
+- model: admin.logentry
+  pk: 21
+  fields: {action_time: !!timestamp '2017-08-14 07:17:45.426801+00:00', user: 1, content_type: 8,
+    object_id: '2', object_repr: Multi-Vendor Networking!, action_flag: 2, change_message: '[]'}
+- model: admin.logentry
+  pk: 22
+  fields: {action_time: !!timestamp '2017-08-14 07:29:53.766093+00:00', user: 1, content_type: 7,
+    object_id: '8', object_repr: test doc, action_flag: 3, change_message: ''}
