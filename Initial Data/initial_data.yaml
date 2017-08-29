@@ -314,7 +314,7 @@
   pk: 22
   fields:
     type: Build-It-Night
-    title: VoIP
+    title: VoIP v2
     location: GOL-2160
     start_date_time: 2016-10-25 19:00:00
     end_date_time: 2016-10-25 21:00:00
@@ -325,7 +325,7 @@
   pk: 23
   fields:
     type: Build-It-Night
-    title: PXE
+    title: PXE v2
     location: 70-2320 (Sys Lab)
     start_date_time: 2017-02-16 19:00:00
     end_date_time: 2017-02-16 21:00:00
