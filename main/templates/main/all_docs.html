@@ -7,7 +7,7 @@
             <h1>List of all documents</h1>
             <ul style="list-style-type:disc">
             {% for resource in resources %}
-                <a href='/{{ resource.file }}'<li>{{ resource.title }}</li></a>
+                <a href='/{{ resource.file }}'><li>{{ resource.title }}</li></a>
             {% endfor %}
             <ul>
         </div>
