@@ -13,7 +13,7 @@ class Resource(models.Model):
 class Event(models.Model):
     EVENT_TYPE = (
         ('Build-It-Night','Build-It-Night'),
-        ('Tech Talk','Tech Talk',),
+        ('Tech Talks','Tech Talks',),
         ('Other','Other',),
     )
     type = models.CharField(choices=EVENT_TYPE, default='Build-It-Night', max_length=14)
