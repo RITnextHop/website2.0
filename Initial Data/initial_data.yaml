@@ -15,7 +15,70 @@
     user_permissions: []
 - model: main.resource
   pk: 1
+  fields: {title: bin1, file: docs/bin1.pdf}
+- model: main.resource
+  pk: 2
+  fields: {title: bin2, file: docs/bin2.pdf}
+- model: main.resource
+  pk: 3
+  fields: {title: bin3, file: docs/bin3.pdf}
+- model: main.resource
+  pk: 4
   fields: {title: bin4, file: docs/bin4.pdf}
+- model: main.resource
+  pk: 5
+  fields: {title: AD & RADIUS, file: docs/ADRADIUS.pdf}
+- model: main.resource
+  pk: 6
+  fields: {title: BGP, file: docs/bgp.pdf}
+- model: main.resource
+  pk: 7
+  fields: {title: BGP v2, file: docs/BGPv2.pdf}
+- model: main.resource
+  pk: 8
+  fields: {title: Docker, file: docs/docker.pdf}
+- model: main.resource
+  pk: 9
+  fields: {title: IST Labs, file: docs/istlabs.pdf}
+- model: main.resource
+  pk: 10
+  fields: {title: NAT & ACL, file: docs/natacl.pdf}
+- model: main.resource
+  pk: 11
+  fields: {title: Network Security, file: docs/netsec.pdf}
+- model: main.resource
+  pk: 12
+  fields: {title: PXE Boot, file: docs/PXEBoots.pdf}
+- model: main.resource
+  pk: 13
+  fields: {title: Tunneling, file: docs/tunneling.pdf}
+- model: main.resource
+  pk: 14
+  fields: {title: Brandt Woolf's Virtualization Presentation, file: docs/Virtualization-Brandt_Woolf.pdf}
+- model: main.resource
+  pk: 15
+  fields: {title: Virtualization Lab, file: docs/Virtualization.pdf}
+- model: main.resource
+  pk: 16
+  fields: {title: VPN, file: docs/vpn.pdf}
+- model: main.resource
+  pk: 17
+  fields: {title: Adv Routing, file: docs/Week2_AdvLab.pdf}
+- model: main.resource
+  pk: 18
+  fields: {title: Basic Routing, file: docs/Week2_BasicLab.pdf}
+- model: main.resource
+  pk: 19
+  fields: {title: DHCP & DNS, file: docs/week4.pdf}
+- model: main.resource
+  pk: 20
+  fields: {title: VoIP, file: docs/Week10_VoIP.pdf}
+- model: main.resource
+  pk: 21
+  fields: {title: Wireless Networking BSSID, file: docs/WirelessNetworking-BSSID.pdf}
+- model: main.resource
+  pk: 22
+  fields: {title: Wireless Networking ESSID, file: docs/WirelessNetworking-ESSID.pdf}
 - model: main.event
   pk: 1
   fields:
@@ -24,7 +87,7 @@
     location: Golisano, 70-2400
     start_date_time: 2014-11-06 18:30:00
     end_date_time: 2014-11-06 19:30:00
-    description: ''
+    description: 'Come join us to kick off the club. We want to know what you are looking for in Nexthop!'
     stream_url: ''
     resources: []
 - model: main.event
