@@ -276,7 +276,7 @@
     description: Enjoy presentations by Professor Jonathan Weissman on DNSSec and
       TSIG, Anthony Critelli on Network Access Controls, and Brandt Woolf on Linux
       and its hooks for packets.
-    stream_url: https://www.youtube.com/watch?v=guJjinipmso
+    stream_url: https://www.youtube.com/embed/guJjinipmso
     resources: []
 - model: main.event
   pk: 18
