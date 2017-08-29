@@ -126,7 +126,7 @@
 - model: main.event
   pk: 5
   fields:
-    type: Tech Talks
+    type: 'Tech Talks'
     title: First Tech Talks!
     location: Golisano, 70-1455
     start_date_time: 2015-04-16 19:00:00
@@ -192,7 +192,7 @@
 - model: main.event
   pk: 11
   fields:
-    type: Tech Talks
+    type: 'Tech Talks'
     title: Wireshark
     location: Golisano, 70-1435
     start_date_time: 2015-11-12 19:00:00
@@ -236,7 +236,7 @@
 - model: main.event
   pk: 15
   fields:
-    type: Tech Talks
+    type: 'Tech Talks'
     title: Docker and IST Labs Infrastructure
     location: Golisano, 70-1435
     start_date_time: 2016-03-16 19:00:00
@@ -258,7 +258,7 @@
 - model: main.event
   pk: 17
   fields:
-    type: Tech Talks
+    type: 'Tech Talks'
     title: DNSSec, TSIG, NAC, and Linux Hooks for Packets
     location: Golisano, 70-2590
     start_date_time: 2016-05-12 19:00:00
@@ -302,7 +302,7 @@
 - model: main.event
   pk: 21
   fields:
-    type: Tech Talks
+    type: 'Tech Talks'
     title: Cloud and Virtualization
     location: GOL-2400
     start_date_time: 2016-10-18 19:00:00
@@ -357,7 +357,7 @@
 - model: main.event
   pk: 26
   fields:
-    type: Tech Talks
+    type: 'Tech Talks'
     title: Networking
     location: GOL-2400
     start_date_time: 2016-11-29 19:00:00
@@ -401,7 +401,7 @@
 - model: main.event
   pk: 30
   fields:
-    type: Tech Talks
+    type: 'Tech Talks'
     title: Automation
     location: 70-2400
     start_date_time: 2017-03-02 19:00:00
