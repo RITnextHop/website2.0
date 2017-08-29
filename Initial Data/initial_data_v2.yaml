@@ -64,6 +64,12 @@
 - model: main.resource
   pk: 22
   fields: {title: Wireless Networking ESSID, file: docs/WirelessNetworking-ESSID.pdf}
+- model: main.resource
+  pk: 23
+  fields: {title: Disater Recovery, file: 'docs/Disaster Recovery in the Modern Enterprise.pdf'}
+- model: main.resource
+  pk: 24
+  fields: {title: Dr. Golen 2.5 Routing, file: 'docs/Modular Routing at Layer 2.5.pdf'}
 - model: main.event
   pk: 1
   fields:
