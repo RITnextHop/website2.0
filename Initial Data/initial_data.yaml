@@ -413,7 +413,7 @@
   pk: 31
   fields:
     type: Build-It-Night
-    title: BGP
+    title: BGP v2
     location: 70-2320
     start_date_time: 2017-05-04 19:00:00
     end_date_time: 2017-05-04 21:00:00
