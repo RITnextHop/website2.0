@@ -20,7 +20,7 @@
                 {% endif %}
             </h2>
             <h3>{{ event.location }}</h3>
-            {{ event.description|safe|linebreak }}
+            {{ event.description|safe|linebreaks }}
             <br>
             {% for resource in event.resources.all %}
                 <br><br><iframe src="/{{ resource.file }}" align="left" width="800" height="500"></iframe>
