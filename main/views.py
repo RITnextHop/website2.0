@@ -6,9 +6,10 @@ from django.http import Http404, HttpResponse
 # Create your views here.
 
 def Index(request):
+    for eboard in 
     data = {
         'current_page': 'Home',
-        'eboard': Eboard.objects.get(term='2017-2018'), #update term here to change eboard after creating new eboard db object
+        'eboard': Eboard.objects.get(is_current=True)[:1],
         'mission': ClubInfo.objects.get(pk=1).mission,
         'future_events': Event.objects.filter(end_date_time__gt=datetime.datetime.now()).order_by('start_date_time')[:2]
     }
