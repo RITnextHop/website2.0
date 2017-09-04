@@ -24,7 +24,7 @@ class Event(models.Model):
     description = models.TextField(max_length=10000)
     resources = models.ManyToManyField(Resource, blank=True)
     stream_url = models.URLField(blank=True, help_text='If this is a YouTube link, ensure that /emded/ in include! Example: https://www.youtube.com/embed/EBYrGQoJ0Xg')
-    #url_slug = models.SlugField(blank=True)
+    sign-in_url = models.URLField(blank=True, help_text='Link to Google Form that will only appear when the event is current')
 
     @property
     def url(self):
