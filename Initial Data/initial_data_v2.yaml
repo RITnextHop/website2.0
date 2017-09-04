@@ -460,7 +460,7 @@
     resources: [7]
 - model: main.eboard
   pk: 1
-  fields: {term: 2017-2018, president: Joe, president_email: joe@rit.edu, president_year_major: 4th
+  fields: {is_current: true, term: 2017-2018, president: Joe, president_email: joe@rit.edu, president_year_major: 4th
       year CSEC, vice_president: Thomas, vp_email: thomas@rit.edu, vp_year_major: 3rd
       year CIT, secretary: Tyler, secretary_email: tyler@rit.edu, secretary_year_major: 4th
       year CIT, treasurer: Peter, treasurer_email: peter@rit.edu, treasurer_year_major: 1st
