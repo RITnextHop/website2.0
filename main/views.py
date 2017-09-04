@@ -8,7 +8,7 @@ from django.http import Http404, HttpResponse
 def Index(request):
     data = {
         'current_page': 'Home',
-        'eboard': Eboard.objects.get(is_current=True)[:1],
+        'eboard': Eboard.objects.filter(is_current=True)[:1],
         'mission': ClubInfo.objects.get(pk=1).mission,
         'future_events': Event.objects.filter(end_date_time__gt=datetime.datetime.now()).order_by('start_date_time')[:2]
     }
