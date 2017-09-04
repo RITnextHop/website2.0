@@ -38,7 +38,7 @@ class Event(models.Model):
     #    super(Event, self).save(*args, **kwargs)
 
 class Eboard(models.Model):
-    is_current = model.BooleanField(default=False)
+    is_current = models.BooleanField(default=False)
     term = models.CharField(max_length=50, null=True)
     president = models.CharField(max_length=50)
     president_email = models.EmailField()
