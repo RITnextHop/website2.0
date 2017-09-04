@@ -56,7 +56,6 @@ def EventPage(request, event_url):
         }
         if current_event.start_date_time <= datetime.datetime.now() <= current_event.end_date_time:
             data.update({'is_current': True})
-            break
         return render(request, 'main/event_page.html', data)
 
 def Docs(request):
