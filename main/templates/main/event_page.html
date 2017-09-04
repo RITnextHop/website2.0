@@ -24,7 +24,7 @@
             <br>
             {% if is_current %}
               <div class="alert alert-warning">
-                <a href="{{ event.sign-in_url }}"><strong>Click here to Sign-In!</strong></a>
+                <a href="{{ event.signin_url }}"><strong>Click here to Sign-In!</strong></a>
               </div>
             {% endif %}
             {% for resource in event.resources.all %}
