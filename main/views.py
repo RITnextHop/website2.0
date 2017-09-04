@@ -6,7 +6,6 @@ from django.http import Http404, HttpResponse
 # Create your views here.
 
 def Index(request):
-    for eboard in 
     data = {
         'current_page': 'Home',
         'eboard': Eboard.objects.get(is_current=True)[:1],
