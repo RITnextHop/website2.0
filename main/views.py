@@ -57,7 +57,7 @@ def EventPage(request, event_url):
         }
         print(current_event.start_date_time)
         print(timezone.now())
-        if current_event.start_date_time <= datetime.now() <= current_event.end_date_time:
+        if current_event.start_date_time <= timezone.now() <= current_event.end_date_time:
             data.update({'is_current': True})
         return render(request, 'main/event_page.html', data)
 
