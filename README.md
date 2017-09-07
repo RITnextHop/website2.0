@@ -7,6 +7,23 @@ Follow this guide to setup Python 3.6 and Pip. (Virtual Environment not necessar
 
 https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-centos-7
 
+Setup NTP
+---
+
+NTP is needed to ensure releasing of events and such is accurates
+
+*assuming* centos 7
+
+    timedatectl set-ntp true
+
+    timedatectl set-timezone America/New_York
+    
+    yum -y install ntpd
+
+    systemctl enable ntpd
+
+    systemctl start ntpd
+
 Configure Data
 ---
 The 'Initial Data' directory contains a yaml file of initial website data such as Club Info, Eboard, Past Events, etc. If this file is not imported a superuser must be created and Club Info and eboard must be populated for index page to load.
