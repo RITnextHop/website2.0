@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import *
 import datetime
 from django.http import Http404, HttpResponse
+from django.utils import timezone
 
 # Create your views here.
 
@@ -54,7 +55,7 @@ def EventPage(request, event_url):
             'current_page': current_event.title,
             'event': current_event
         }
-        if current_event.start_date_time <= datetime.datetime.utcnow() <= current_event.end_date_time:
+        if current_event.start_date_time <= timezone.now() <= current_event.end_date_time:
             data.update({'is_current': True})
         return render(request, 'main/event_page.html', data)
 
