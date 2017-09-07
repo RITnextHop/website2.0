@@ -11,7 +11,7 @@ def Index(request):
         'current_page': 'Home',
         'eboard': Eboard.objects.filter(is_current=True)[:1],
         'mission': ClubInfo.objects.get(pk=1).mission,
-        'future_events': Event.objects.filter(end_date_time__gt=datetime.datetime.now()).order_by('-start_date_time')[:2]
+        'future_events': Event.objects.filter(end_date_time__gt=datetime.datetime.now()).order_by('start_date_time')[:2]
     }
     for event in Event.objects.all():
         if event.start_date_time.date() == datetime.date.today():
@@ -28,7 +28,7 @@ def Live(request):
 def Events(request):
     data = {
         'current_page': 'Events',
-        'future_events': Event.objects.filter(end_date_time__gt=datetime.datetime.now()).order_by('-start_date_time'),
+        'future_events': Event.objects.filter(end_date_time__gt=datetime.datetime.now()).order_by('start_date_time'),
         #have these searches exclude future events?
         'bins': Event.objects.filter(type='Build-It-Night').order_by('-start_date_time'),
         'tech_talks': Event.objects.filter(type='Tech Talks').order_by('-start_date_time'),
