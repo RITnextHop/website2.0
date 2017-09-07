@@ -18,7 +18,7 @@ NTP is needed to ensure releasing of events and such is accurates
 
     timedatectl set-timezone America/New_York
     
-    yum -y install ntpd
+    yum install -y ntpd
 
     systemctl enable ntpd
 
