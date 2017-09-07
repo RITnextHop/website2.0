@@ -12,7 +12,7 @@ Setup NTP
 
 NTP is needed to ensure releasing of events and such is accurates
 
-*assuming* centos 7
+*assuming centos 7*
 
     timedatectl set-ntp true
 
