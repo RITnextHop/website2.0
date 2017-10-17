@@ -38,7 +38,6 @@
         
         
     <br>
-    {% for eboard in eboard %}
     <div class="sectionInner text gov_contactText">
         <div class="fiftyFloatCenter" id="top">
             <h1><center><i class="fa fa-users"></i> Executive Board</center></h1>
@@ -63,5 +62,4 @@
                     <li>Advisor: <a href="mailto:{{ eboard.advisor_email }}">{{ eboard.advisor }}</a><br><span class="major">{{ eboard.advisor_postion }}</span></li>
             </div>
     </div>
-    {% endfor %}
 {% endblock %}

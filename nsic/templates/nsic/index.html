@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+{% load static %}
+<html>
+	<head>
+		<title>NSIC by NextHop</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="{% static "js/jquery.min.js" %}"></script>
+		<script src="{% static "js/skel.min.js" %}"></script>
+		<script src="{% static "js/skel-layers.min.js" %}"></script>
+		<script src="{% static "js/init.js" %}"></script>
+		<noscript>
+			<link rel="stylesheet" href="{% static "css/skel.css" %}" />
+			<link rel="stylesheet" href="{% static "css/style.css" %}" />
+			<link rel="stylesheet" href="{% static "css/style-xlarge.css" %}" />
+		</noscript>
+
+	</head>
+	<body class="landing">
+
+		<!-- Header -->
+			<header id="header" >
+				<h1><strong><a href="/">NSIC</a></strong> by <a href="http://nexthop.network" target="_blank">NextHop</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/sponsors">Sponsors</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<img class="logo" src="{{ NSICInfo.logo.url }}" /><br />
+				<h2>{{ Year.combined_date }}</h2>
+				<ul class="actions">
+					<li><a href="{{ Year.sign_up_form }}" class="button special big" target="_blank">Sign Up to Participate!</a></li>
+				</ul>
+			</section>
+
+			<!-- One -->
+				<section id="one" class="wrapper style1">
+					<div class="container 75%">
+						<div class="row 200%">
+							<div class="6u 12u$(medium)">
+								<header class="major">
+									<h2>Build an Infrastructure</h2>
+									<p>From the ground up</p>
+								</header>
+							</div>
+							<div class="6u$ 12u$(medium)">
+								{{ NSICInfo.what|safe|linebreaks}}
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Two -->
+				<section id="details" class="wrapper style2 special">
+					<div class="container">
+						<header class="major">
+							<h2>Where/When/Who </h2>
+							<p>The details</p>
+						</header>
+						<div class="row 150%">
+							<div class="centered">
+								<div class="innertext">
+									{{ details|safe|linebreaks }}
+								</div>
+						</div>
+						</div>
+						<ul class="actions">
+							<li><a href="{{ Year.mailchimp }}" class="button big" target="_blank">Sign Up for Info</a></li>
+							<li><a href="{{ Year.sign_up_form }}" class="button special big" target="_blank">Sign Up to Participate!</a></li>
+						</ul>
+					</div>
+				</section>
+				<section id="schedule" class="wrapper style1 special">
+						<div class="container">
+						<header class="major">
+							<h2>Schedule</h2>
+							<p>Subject to change</p>
+						</header>
+						<div class="row 150%">
+							<div class="centered">
+								<div class="innertext2">
+									<div class="schedule-list1">
+										<h1>{{ Year.day1 }}</h1>
+										<ul>
+											<p1>
+											{% for item in Year.day1_schedule.all %}
+												<li>{{ item.time }} - {{ item.title }}</li>
+											{% endfor %}
+											</p1>
+										</ul>
+									</div>
+									<div class="schedule-list2">
+										<h1>{{ Year.day2 }}</h1>
+										<ul>
+											<p1>
+											{% for item in Year.day2_schedule.all %}
+												<li>{{ item.time }} - {{ item.title }}</li>
+											{% endfor %}
+											</p1>
+										</ul>
+									</div>
+								</div>
+						</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Three -->
+				<section id="topics" class="wrapper style2">
+					<div class="container">
+						<header class="major special">
+							<h2>Focus Areas</h2>
+							<p>What is this all about?</p>
+						</header>
+						<div class="feature-grid">
+							{% for focus in NSICInfo.focus_areas.all %}
+								<div class="feature">
+									<div class="image rounded"><img src="{{ focus.img.url }}" alt="" /></div>
+									<div class="content">
+										<header>
+											<h4>{{ focus.title }}</h4>
+											<p>{{ focus.detail }}</p>
+										</header>
+										<p>{{ focus.description }}</p>
+									</div>
+								</div>
+							{% endfor %}
+						</div>
+						<div style="text-align: center; padding: 10px 10px;">
+							<a href="{{ Year.possible_topics }}" class="button big" target="_blank">List of possible topics</a>
+						</div>
+					</div>
+				</section>
+
+				<section id="prizes" class="wrapper style1">
+					<div class="container 75%">
+						<div class="row 200%">
+							<div class="6u 12u$(medium)">
+								<header class="major">
+									<h2>Prizes</h2>
+									<p>Subject to change</p>
+								</header>
+							</div>
+							<div class="6u$ 12u$(medium)">
+								<ul id="prizelist">
+									{% for prize in Year.prizes.all %}
+										<li><a href="{{ prize.url }}">{{ prize.name }}</a></li>
+									{% endfor %}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="contact" class="wrapper style2 special">
+					<div class="container 75%">
+						<div class="row 200%">
+							<div class="6u 12u$(medium)">
+								<p>Here are different places you can get in touch with us. </p>
+								<ul id="contactlist">
+									<li>Email: <a href="mailto:nexthop@rit.edu?subject=NSIC">nexthop@rit.edu</a></li>
+									<li>Facebook Group: <a href="http://facebook.com/groups/ritnexthop/" target="_blank">FB.com/groups/ritnexthop/</a></li>
+									<li>Facebook Event: <a href="{{ Year.fb_event }}" target="_blank">FB.com/events/219921965138463/</a></li>
+									<li>NextHop Homepage: <a href="http://nexthop.network" target="_blank">NextHop.network</a></li>
+								</ul>
+							</div>
+							<div class="6u$ 12u$(medium)">
+								<header class="major">
+									<h2>Contact Us</h2>
+								</header>
+						</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Four -->
+				<section id="volunteer" class="wrapper style3 special">
+					<div class="container">
+						<header class="major">
+							<h2>We need your help!</h2>
+							<p>Looking for RIT students to help us organize and run this awesome event.</p>
+						</header>
+						<ul class="actions">
+							<li><a href="{{ Year.volunteer_form }}" class="button special big" target="_blank">Sign up to Volunteer</a></li>
+						</ul>
+					</div>
+				</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="http://facebook.com/groups/ritnexthop" class="icon fa-facebook"></a></li>
+						<li><a href="http://twitter.com/ritnexthop" class="icon fa-twitter"></a></li>
+					<!--	<li><a href="#" class="icon fa-instagram"></a></li>-->
+					</ul>
+					<ul class="copyright">
+						<li>&copy; <a href="http://nexthop.network">NextHop</a> 2017</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+				<!---		<li>Images: <a href="http://unsplash.com">Unsplash</a></li> -->
+					</ul>
+				</div>
+			</footer>
+
+	</body>
+</html>

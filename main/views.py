@@ -9,12 +9,12 @@ from django.utils import timezone
 def Index(request):
     data = {
         'current_page': 'Home',
-        'eboard': Eboard.objects.filter(is_current=True)[:1],
+        'eboard': Eboard.objects.filter(is_current=True)[:1][0],
         'mission': ClubInfo.objects.get(pk=1).mission,
         'future_events': Event.objects.filter(end_date_time__gt=datetime.datetime.now()).order_by('start_date_time')[:2]
     }
     for event in Event.objects.all():
-        if event.start_date_time.date() == datetime.date.today():
+        if event.is_today:
             data.update({'event_today': event})
             break
     return render(request,'main/index.html', data)
@@ -29,10 +29,9 @@ def Events(request):
     data = {
         'current_page': 'Events',
         'future_events': Event.objects.filter(end_date_time__gt=datetime.datetime.now()).order_by('start_date_time'),
-        #have these searches exclude future events?
-        'bins': Event.objects.filter(type='Build-It-Night').order_by('-start_date_time'),
-        'tech_talks': Event.objects.filter(type='Tech Talks').order_by('-start_date_time'),
-        'other_events': Event.objects.filter(type='Other').order_by('-start_date_time'),
+        'bins': Event.objects.filter(type='Build-It-Night',end_date_time__lt=datetime.datetime.now()).order_by('-start_date_time'),
+        'tech_talks': Event.objects.filter(type='Tech Talks',end_date_time__lt=datetime.datetime.now()).order_by('-start_date_time'),
+        'other_events': Event.objects.filter(type='Other',end_date_time__lt=datetime.datetime.now()).order_by('-start_date_time'),
     }
     return render(request,'main/events.html', data)
 
@@ -43,6 +42,7 @@ def Contact(request):
     return render(request,'main/contact_us.html',data)
 
 def EventPage(request, event_url):
+    #this is so bad lol change it to try catch
     current_event = ''
     for event in Event.objects.all():
         if event.url == event_url:
@@ -55,10 +55,6 @@ def EventPage(request, event_url):
             'current_page': current_event.title,
             'event': current_event
         }
-        print(current_event.start_date_time)
-        print(timezone.now())
-        if current_event.start_date_time <= timezone.now() <= current_event.end_date_time:
-            data.update({'is_current': True})
         return render(request, 'main/event_page.html', data)
 
 def Docs(request):
