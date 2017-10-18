@@ -22,17 +22,20 @@
             <h3>{{ event.location }}</h3>
             {{ event.description|safe|linebreaks }}
             <br>
-            {% if is_current %}
+            {% if event.is_now %}
               <div class="alert alert-warning">
                 <a href="{{ event.signin_url }}"><strong>Click here to Sign-In!</strong></a>
               </div>
             {% endif %}
-            {% for resource in event.resources.all %}
-                <br><br><iframe src="/{{ resource.file }}" align="left" width="800" height="500"></iframe>
-            {% endfor %}
-            {% if 'http' in event.stream_url %}
-                <br><br><iframe src="{{ event.stream_url }}" align="left" width="800" height="500" allowfullscreen></iframe>
+            {% if event.is_past %}
+                {% for resource in event.resources.all %}
+                    <br><br><iframe src="/{{ resource.file }}" align="left" width="800" height="500"></iframe>
+                {% endfor %}
+                {% if 'http' in event.stream_url %}
+                    <br><br><iframe src="{{ event.stream_url }}" align="left" width="800" height="500" allowfullscreen></iframe>
+                {% endif %}
             {% endif %}
+
 	    </div>
 	</div>
 </div>

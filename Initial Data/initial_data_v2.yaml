@@ -66,18 +66,18 @@
   fields: {title: Wireless Networking ESSID, file: docs/WirelessNetworking-ESSID.pdf}
 - model: main.resource
   pk: 23
-  fields: {title: Disater Recovery, file: 'docs/Disaster Recovery in the Modern Enterprise.pdf'}
+  fields: {title: Disater Recovery, file: 'docs/disaster-recovery-in-the-modern-enterprise.pdf'}
 - model: main.resource
   pk: 24
-  fields: {title: Dr. Golen 2.5 Routing, file: 'docs/Modular Routing at Layer 2.5.pdf'}
+  fields: {title: Dr. Golen 2.5 Routing, file: 'docs/modular-routing-at-layer-25.pdf'}
 - model: main.event
   pk: 1
   fields:
     type: Other
     title: Initial NextHop Meeting!
     location: Golisano, 70-2400
-    start_date_time: 2014-11-06 23:30:00+00:00
-    end_date_time: 2014-11-07 00:30:00+00:00
+    start_date_time: 2014-11-06 18:30:00
+    end_date_time: 2014-11-06 19:30:00
     description: Come join us to kick off the club. We want to know what you are looking
       for in Nexthop!
     stream_url: ''
@@ -88,8 +88,8 @@
     type: Build-It-Night
     title: Multi-Vendor Networking!
     location: Golisano, 70-2130 - Projects Lab
-    start_date_time: 2014-11-21 00:00:00+00:00
-    end_date_time: 2014-11-21 02:00:00+00:00
+    start_date_time: 2014-11-20 19:00:00
+    end_date_time: 2014-11-20 21:00:00
     description: 'First NextHop Build-It-Night: Multi-Vendor Networking!'
     stream_url: ''
     resources: [1]
@@ -99,8 +99,8 @@
     type: Build-It-Night
     title: DHCP/DNS
     location: Golisano, 70-2320
-    start_date_time: 2015-03-12 23:00:00+00:00
-    end_date_time: 2015-03-13 01:00:00+00:00
+    start_date_time: 2015-03-12 19:00:00
+    end_date_time: 2015-03-12 21:00:00
     description: Learn about DHCP or DNS or refresh your knowledge!
     stream_url: ''
     resources: [2]
@@ -110,8 +110,8 @@
     type: Build-It-Night
     title: The Lamp Stack
     location: Golisano, 70-2320
-    start_date_time: 2015-04-02 23:00:00+00:00
-    end_date_time: 2015-04-03 01:00:00+00:00
+    start_date_time: 2015-04-02 19:00:00
+    end_date_time: 2015-04-02 21:00:00
     description: Join us to get down and dirty with the LAMP (Linux, Apache, MySQL,
       PHP) stack. Learn how to setup the infrastructure needed to support a dynamic
       website or web application. Learners of all skill levels are welcome.
@@ -123,8 +123,8 @@
     type: Tech Talks
     title: First Tech Talks!
     location: Golisano, 70-1455
-    start_date_time: 2015-04-16 23:00:00+00:00
-    end_date_time: 2015-04-17 01:00:00+00:00
+    start_date_time: 2015-04-16 19:00:00
+    end_date_time: 2015-04-16 21:00:00
     description: Come learn about cool things like SLAAC and Google Authenticator!
     stream_url: ''
     resources: []
@@ -134,8 +134,8 @@
     type: Build-It-Night
     title: PXE
     location: Golisano, 70-2320
-    start_date_time: 2015-04-30 23:00:00+00:00
-    end_date_time: 2015-05-01 01:00:00+00:00
+    start_date_time: 2015-04-30 19:00:00
+    end_date_time: 2015-04-30 21:00:00
     description: Learn about PXE (Pre-Execution Environment) which involves booting
       an operating system on a computer over the network. You'll get to learn about
       it and build your own PXE server! This is a critical piece of technology used
@@ -148,8 +148,8 @@
     type: Other
     title: Yahoo! Data Center Road Trip
     location: Meetup TBA
-    start_date_time: 2015-05-14 14:00:00+00:00
-    end_date_time: 2015-05-14 21:00:00+00:00
+    start_date_time: 2015-05-14 10:00:00
+    end_date_time: 2015-05-14 17:00:00
     description: Hit the road with NextHop as we head out and tour the Yahoo! Data
       Center. More information to come!
     stream_url: ''
@@ -160,8 +160,8 @@
     type: Other
     title: General Meeting/Info Session
     location: Golisano, 70-1435
-    start_date_time: 2015-09-03 23:00:00+00:00
-    end_date_time: 2015-09-04 00:00:00+00:00
+    start_date_time: 2015-09-03 19:00:00
+    end_date_time: 2015-09-03 20:00:00
     description: Info session and idea collaboration with an awesome demo! View the
       slides <a href="https://docs.google.com/presentation/d/19z-Qy__WXwp6VgkyMrIj_o8_HM7pBe6JagzLvCKKab8/edit?usp=sharing"
       target="_blank">here</a> and the live stream <a href="live.php">here</a>.
@@ -184,8 +184,8 @@
     type: Build-It-Night
     title: ACLs and NAT
     location: Golisano, 70-2160 (Netlab)
-    start_date_time: 2015-10-15 23:00:00+00:00
-    end_date_time: 2015-10-16 01:00:00+00:00
+    start_date_time: 2015-10-15 19:00:00
+    end_date_time: 2015-10-15 21:00:00
     description: Learn about and configure access control lists and how to implement
       NAT.
     stream_url: ''
@@ -196,8 +196,8 @@
     type: Tech Talks
     title: Wireshark
     location: Golisano, 70-1435
-    start_date_time: 2015-11-13 00:00:00+00:00
-    end_date_time: 2015-11-13 02:00:00+00:00
+    start_date_time: 2015-11-12 19:00:00
+    end_date_time: 2015-11-12 21:00:00
     description: Learn about Wireshark's features and how to use it.
     stream_url: ''
     resources: []
@@ -207,8 +207,8 @@
     type: Build-It-Night
     title: Securing Your Network
     location: Golisano, 70-2160 (Netlab)
-    start_date_time: 2016-02-04 00:00:00+00:00
-    end_date_time: 2016-02-04 02:00:00+00:00
+    start_date_time: 2016-02-03 19:00:00
+    end_date_time: 2016-02-03 21:00:00
     description: Want to know some simple steps to secure your network? We will be
       covering a range of topics including port security, DHCP snooping, dynamic ARP
       inspection, and IP source guard.
@@ -220,8 +220,8 @@
     type: Build-It-Night
     title: VPNs
     location: Golisano, 70-2160 (Netlab)
-    start_date_time: 2016-02-18 00:00:00+00:00
-    end_date_time: 2016-02-18 02:00:00+00:00
+    start_date_time: 2016-02-17 19:00:00
+    end_date_time: 2016-02-17 21:00:00
     description: We will be discussing how VPNs work and why they're used. Then you'll
       get the chance to make your own VPN using a Cisco ASA!
     stream_url: ''
@@ -232,8 +232,8 @@
     type: Build-It-Night
     title: VoIP
     location: Golisano, 70-2130 (Projects Lab)
-    start_date_time: 2016-03-03 00:00:00+00:00
-    end_date_time: 2016-03-03 02:00:00+00:00
+    start_date_time: 2016-03-02 19:00:00
+    end_date_time: 2016-03-02 21:00:00
     description: Voice over IP is the modern phone technology that many companies
       have already switched to or are currently switching to. We will go over some
       basics of VoIP and how they differ from traditional phone systems. After that,
@@ -246,8 +246,8 @@
     type: Tech Talks
     title: Docker and IST Labs Infrastructure
     location: Golisano, 70-1435
-    start_date_time: 2016-03-16 23:00:00+00:00
-    end_date_time: 2016-03-17 01:00:00+00:00
+    start_date_time: 2016-03-16 19:00:00
+    end_date_time: 2016-03-16 21:00:00
     description: Come learn about Docker and the IST Labs infrastructure! View the
       presentations on Docker & CoreOS <a href=https://nexthop.network/docs/docker.pdf"
       target="_blank">here</a> and the IST Labs Infrastructure document <a href="https://nexthop.network/docs/istlabs.pdf"
@@ -260,8 +260,8 @@
     type: Build-It-Night
     title: Tunneling
     location: Golisano, 70-2160 (Netlab)
-    start_date_time: 2016-04-27 23:00:00+00:00
-    end_date_time: 2016-04-28 01:00:00+00:00
+    start_date_time: 2016-04-27 19:00:00
+    end_date_time: 2016-04-27 21:00:00
     description: Come learn about 6 to 4 tunnels and layer 2 tunneling.
     stream_url: ''
     resources: [13]
@@ -271,8 +271,8 @@
     type: Tech Talks
     title: DNSSec, TSIG, NAC, and Linux Hooks for Packets
     location: Golisano, 70-2590
-    start_date_time: 2016-05-12 23:00:00+00:00
-    end_date_time: 2016-05-13 01:00:00+00:00
+    start_date_time: 2016-05-12 19:00:00
+    end_date_time: 2016-05-12 21:00:00
     description: Enjoy presentations by Professor Jonathan Weissman on DNSSec and
       TSIG, Anthony Critelli on Network Access Controls, and Brandt Woolf on Linux
       and its hooks for packets.
@@ -284,8 +284,8 @@
     type: Build-It-Night
     title: Kicking Off A New Year
     location: GOL-2160 (Net Lab)
-    start_date_time: 2016-08-30 23:00:00+00:00
-    end_date_time: 2016-08-31 01:00:00+00:00
+    start_date_time: 2016-08-30 19:00:00
+    end_date_time: 2016-08-30 21:00:00
     description: Info session, intro to routing & switching lab, and advanced routing
       lab.
     stream_url: ''
@@ -296,8 +296,8 @@
     type: Build-It-Night
     title: IP Services
     location: GOL-2160 (Net Lab)
-    start_date_time: 2016-09-13 23:00:00+00:00
-    end_date_time: 2016-09-14 01:00:00+00:00
+    start_date_time: 2016-09-13 19:00:00
+    end_date_time: 2016-09-13 21:00:00
     description: Come and join us for labs on IP Services such as DNS and DHCP.
     stream_url: ''
     resources: [19]
@@ -307,8 +307,8 @@
     type: Build-It-Night
     title: Wireless Networking
     location: GOL-2160 (Net Lab)
-    start_date_time: 2016-09-27 23:00:00+00:00
-    end_date_time: 2016-09-28 01:00:00+00:00
+    start_date_time: 2016-09-27 19:00:00
+    end_date_time: 2016-09-27 21:00:00
     description: Ever wonder how all the wireless access point on campus are configured
       and manage? The lab will be configuring your own wireless network using a Cisco
       wireless controller.
@@ -320,21 +320,21 @@
     type: Tech Talks
     title: Cloud and Virtualization
     location: GOL-2400
-    start_date_time: 2016-10-18 23:00:00+00:00
-    end_date_time: 2016-10-19 01:00:00+00:00
+    start_date_time: 2016-10-18 19:00:00
+    end_date_time: 2016-10-18 21:00:00
     description: Brandt Woolf, RIT student and NextHop President speaking on Virtualization<br>Dr.
       Erik Golen, RIT Professor speaking on his IEEE Working Group<br>Mike Scholl,
       Cloud Engineer at OffsiteDataSync speaking on Cloud Backups
     stream_url: ''
-    resources: [14]
+    resources: [14,23,24]
 - model: main.event
   pk: 22
   fields:
     type: Build-It-Night
     title: VoIP v2
     location: GOL-2160
-    start_date_time: 2016-10-25 23:00:00+00:00
-    end_date_time: 2016-10-26 01:00:00+00:00
+    start_date_time: 2016-10-25 19:00:00
+    end_date_time: 2016-10-25 21:00:00
     description: Come and learn about VoIP which is the future of telephony!
     stream_url: ''
     resources: [20]
@@ -344,8 +344,8 @@
     type: Build-It-Night
     title: PXE v2
     location: 70-2320 (Sys Lab)
-    start_date_time: 2017-02-17 00:00:00+00:00
-    end_date_time: 2017-02-17 02:00:00+00:00
+    start_date_time: 2017-02-16 19:00:00
+    end_date_time: 2017-02-16 21:00:00
     description: Come join us to learn how to boot an operating system over the network.
       This can be very useful for deploying an operating system to many computers
       at once.
@@ -357,8 +357,8 @@
     type: Build-It-Night
     title: Virtualization
     location: 70-2320 (Sys Lab)
-    start_date_time: 2017-02-03 00:00:00+00:00
-    end_date_time: 2017-02-03 02:00:00+00:00
+    start_date_time: 2017-02-02 19:00:00
+    end_date_time: 2017-02-02 21:00:00
     description: Come and join us to learn how to install ESXi and deploy a vCenter
       appliance!
     stream_url: ''
@@ -369,8 +369,8 @@
     type: Build-It-Night
     title: AD & RADIUS
     location: GOL-2160
-    start_date_time: 2016-11-09 00:00:00+00:00
-    end_date_time: 2016-11-09 02:00:00+00:00
+    start_date_time: 2016-11-08 19:00:00
+    end_date_time: 2016-11-08 21:00:00
     description: Come and learn about Active Directory and RADIUS! What does that
       mean exactly? AD is a type of centralized user management and RADIUS is a means
       to have different types of application authentication agaisnt that user database.
@@ -382,8 +382,8 @@
     type: Tech Talks
     title: Networking
     location: GOL-2400
-    start_date_time: 2016-11-30 00:00:00+00:00
-    end_date_time: 2016-11-30 02:00:00+00:00
+    start_date_time: 2016-11-29 19:00:00
+    end_date_time: 2016-11-29 21:00:00
     description: 'Bruce Hartpence: Multicast<br>Mark Manning: TOR<br>Garret Arcoraci:
       OSPF & EIGRP'
     stream_url: ''
@@ -394,8 +394,8 @@
     type: Other
     title: GCCIS Clubs Festivus Party
     location: 70-1400
-    start_date_time: 2016-12-09 17:00:00+00:00
-    end_date_time: 2016-12-09 21:00:00+00:00
+    start_date_time: 2016-12-09 12:00:00
+    end_date_time: 2016-12-09 16:00:00
     description: RC3, SPARSA, CSC, NextHop, and WiC are coming together to have a
       relaxing party the Friday before finals called Festivus! The clubs plan to have
       a bad sweater contest, a holiday/cyber trivia game, and holiday movies. So come
@@ -409,8 +409,8 @@
     type: Other
     title: NSIC 2017
     location: RIT Simone Center
-    start_date_time: 2017-04-01 12:00:00+00:00
-    end_date_time: 2017-04-01 22:00:00+00:00
+    start_date_time: 2017-04-01 8:00:00
+    end_date_time: 2017-04-01 18:00:00
     description: NSIC is a competition for college students of all experience levels.
       Students get to build a enterprise topology from the ground up. Participants
       will be racing the clock, each other, and overcoming real world issues being
@@ -424,8 +424,8 @@
     type: Build-It-Night
     title: NSIC Prep
     location: 70-2320 (Sys Lab)
-    start_date_time: 2017-03-30 23:00:00+00:00
-    end_date_time: 2017-03-31 01:00:00+00:00
+    start_date_time: 2017-03-30 19:00:00
+    end_date_time: 2017-03-30 21:00:00
     description: To get you ready for NSIC, we will be hosting a modified Build-it-Night
       on March 23rd where NextHop E-board will be around to assist with any questions
       regarding the list of possible topics for NSIC which can be seen below. Even
@@ -438,8 +438,8 @@
     type: Tech Talks
     title: Automation
     location: 70-2400
-    start_date_time: 2017-03-03 00:00:00+00:00
-    end_date_time: 2017-03-03 02:00:00+00:00
+    start_date_time: 2017-03-02 19:00:00
+    end_date_time: 2017-03-02 21:00:00
     description: Come join us for our first Tech Talks of the spring semester! The
       theme of these talks will be automation. At least one of the Tech Talks will
       be an interactive demo, so bring your laptops! We are planning on providing
@@ -452,8 +452,8 @@
     type: Build-It-Night
     title: BGP v2
     location: 70-2320
-    start_date_time: 2017-05-04 23:00:00+00:00
-    end_date_time: 2017-05-05 01:00:00+00:00
+    start_date_time: 2017-05-04 19:00:00
+    end_date_time: 2017-05-04 21:00:00
     description: Come join us to learn about Border Gateway Protocol (BGP) which is
       how the internet works!
     stream_url: ''

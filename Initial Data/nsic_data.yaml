@@ -1,0 +1,73 @@
+- model: nsic.prize
+  pk: 1
+  fields: {name: Rasp Pi 3, url: 'https://newegg.com/'}
+- model: nsic.focusarea
+  pk: 1
+  fields: {title: Networking, detail: Routing & Switching, description: Hands on configuration
+      and topology building with equipment from multiple vendors., img: focus_areas/networking.jpg}
+- model: nsic.focusarea
+  pk: 2
+  fields: {title: Systems Administration, detail: Windows & Linux, description: 'Plan,
+      design, implement, operate, and optimize network services based on business
+      requirements.', img: focus_areas/sys_admin.jpg}
+- model: nsic.focusarea
+  pk: 3
+  fields: {title: Team Building, detail: Work together to solve problems, description: Work
+      with others to solve complex and quickly changing problems as the event progresses.,
+    img: focus_areas/team_building.jpg}
+- model: nsic.focusarea
+  pk: 4
+  fields: {title: Creative Thinking, detail: Adapt quickly to new problems, description: 'Just
+      like in the real world, requirements are always changing and infrastructures
+      are ever evolving. Work quickly to adapt to these changes.', img: focus_areas/creative.png}
+- model: nsic.nsicinfo
+  pk: 1
+  fields:
+    what: "NSIC is a competition for college students of all experience levels. Students\
+      \ get to build a corporate topology from the ground up.\r\n\r\nParticipants\
+      \ will be racing the clock, each other, and overcoming real world issues being\
+      \ thrown at them."
+    details: "NSIC is the Networking & Systems Infrastructure Competition hosted by\
+      \ RIT's Networking & Systems Administration club, <a href=\"http://nexthop.network\"\
+      \ target=\"_blank\">NextHop</a>. The event will be held at <a href=\"http://rit.edu\"\
+      \ target=\"_blank\">RIT</a> in Rochester, NY during {{ Year.combined_date }}.\r\
+      \n\r\nTeams must have 5 members to compete. The only requirement is that all\
+      \ members must be current college students. The registration fee for each team\
+      \ will be {{ Year.registration_fee }}. This includes participation in the event,\
+      \ t-shirts, four meals, and <a href=\"#prizes\">prizes</a> for the winning teams.\r\
+      \n\r\nIf you really want to participate, but can't find a team, we've set up\
+      \ a <a href=\"{{ Year.individual_form }}\" target=\"_blank\">form here</a>.\
+      \ This does not guarantee you will be put on a team, but we will try our best."
+    logo: logo.png
+    focus_areas: [1, 2, 3, 4]
+- model: nsic.scheduleitem
+  pk: 1
+  fields: {title: Registration, time: '08:00:00'}
+- model: nsic.scheduleitem
+  pk: 2
+  fields: {title: Competition Resume, time: '08:00:00'}
+- model: nsic.sponsor
+  pk: 1
+  fields: {name: Cisco, logo: nsic/images/logos/Screen_Shot_2017-09-07_at_1.08.30_PM.png,
+    url: 'http://cisco.com'}
+- model: nsic.partner
+  pk: 1
+  fields: {name: RIT, logo: nsic/images/logos/Screen_Shot_2017-09-06_at_6.53.06_PM.png,
+    url: 'http://rit.edu'}
+- model: nsic.year
+  pk: 1
+  fields:
+    is_current: True
+    day1: 2018-03-31
+    day2: 2018-04-01
+    registration_fee: '50.00'
+    possible_topics: http://test.com
+    sign_up_form: http://test.com
+    individual_form: http://test.com
+    volunteer_form: http://test.com
+    mailchimp: http://test.com
+    day1_schedule: [1]
+    day2_schedule: [2]
+    prizes: [1]
+    sponsors: [1]
+    partners: [1]

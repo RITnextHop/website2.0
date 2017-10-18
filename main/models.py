@@ -1,10 +1,18 @@
 from django.db import models
 from django.template.defaultfilters import slugify
+from django.utils import timezone
+from django.core.exceptions import ValidationError
 
 # Create your models here.
 class Resource(models.Model):
+    def slugify_file(instance, filename):
+        fname, dot, extention = filename.rpartition('.')
+        return 'docs/'+slugify(fname)+'.'+extention
+    def validate_file_extention(instance):
+        if instance.file.content_type != 'application/pdf':
+            raise ValidationError(u'File type much be pdf.')
     title = models.CharField(max_length=100)
-    file = models.FileField(upload_to='docs/', help_text='File must be PDF!!!')
+    file = models.FileField(upload_to=slugify_file, validators=[validate_file_extention], help_text='File must be PDF!!!')
     #link = models.CharField(max_length=100, help_text='MUST BE IN THIS FORMAT: /docs/SEM_FOLDER/FILE_NAME. ie /docs/Spring_2017/BGPv2.pdf')
 
     def __str__(self):
@@ -29,6 +37,29 @@ class Event(models.Model):
     @property
     def url(self):
         return slugify(self.title)
+
+    @property
+    def is_today(self):
+        if ((self.start_date_time.date() == timezone.now().date()) and (self.end_date_time >= timezone.now())):
+            return True
+        else:
+            return False
+    
+    @property
+    def is_now(self):
+        if self.start_date_time <= timezone.now() <= self.end_date_time:
+            return True
+        else:
+            return False
+
+    @property
+    def is_past(self):
+        if self.start_date_time <= timezone.now():
+            return True
+        else:
+            return False
+    
+
 
     def __str__(self):
         return self.title

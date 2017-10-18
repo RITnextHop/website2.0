@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
+    'nsic.apps.NsicConfig',
 ]
 
 MIDDLEWARE = [
@@ -120,10 +121,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-#MEDIA_ROOT = '/main/docs/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'images/')
+MEDIA_URL = '/images/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    # location of your application, should not be public web accessible 
-    '/main/static/',
+#    # location of your application, should not be public web accessible 
+#    'main/static/',
+#    'nsic/static/',
+#    'nsic/images/'
+#    os.path.join(BASE_DIR, "nsic/static/nsic/"),
 )
