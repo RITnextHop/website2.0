@@ -1,0 +1,51 @@
+.sectionInner {
+	margin: 0 5px;
+	max-width: 1000px;
+}
+.padLeft {
+	margin: 0;
+}
+#topBar img {
+	display: none;
+}
+.fiftyFloat {
+	float:none;
+	background-color: white;
+	padding: 15px;
+	border-radius: 30px;
+	overflow: auto;
+}
+.fiftyFloatCenter {
+		float: none;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 30px;
+}
+.fiftyFloat:nth-child(1){
+	margin-bottom:15px;
+}
+.fiftyFloat[id=middle]{
+		margin-top: -60px;
+		border-radius: 0px;
+}
+.fiftyFloatCenter[id=top]{
+	margin-bottom: 20px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.fiftyFloatCenter[id=bottom]{
+	margin-top: -30px;
+	padding: 0px 0px 15px 40px;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+}
+div.event {
+	float:none;
+	width:100%;
+}
+.contact input {
+	width: 100%;
+}
+.contact textarea {
+	width:100%;
+}
