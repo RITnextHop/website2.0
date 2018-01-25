@@ -46,8 +46,12 @@ To intialize the website with data and a superuser, run the below commands from 
     python3.6 manage.py migrate 
 
     python3.6 manage.py migrate --run-syncdb
-
+    
+    #for nexthop site data
     python3.6 manage.py loaddata Initial\ Data/initial_data_v2.yaml
+    
+    #for nsic site data
+    python3.6 manage.py loaddata Initial\ Data/nsic_data.yaml
 
 Run Test Server
 ---
